@@ -1,0 +1,61 @@
+---
+const nav = [
+  { href: '/', label: 'Home' },
+  { href: '/reviews/', label: 'Reviews' },
+  { href: '/guides/', label: 'Guides' },
+  { href: '/about/', label: 'About' },
+  { href: '/start-here/', label: 'Start Here' },
+];
+const currentPath = Astro.url.pathname;
+---
+<header class="site-header">
+  <div class="wrap-wide bar">
+    <a href="/" class="brand">🍯 HoneyTools</a>
+    <nav class="nav">
+      {nav.map((item) => (
+        <a
+          href={item.href}
+          aria-current={currentPath === item.href ? 'page' : undefined}
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-surface);
+  }
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .brand {
+    font-weight: 800;
+    font-size: 1.15rem;
+    text-decoration: none;
+    color: var(--color-text);
+  }
+  .nav {
+    display: flex;
+    gap: 1.1rem;
+    flex-wrap: wrap;
+  }
+  .nav a {
+    text-decoration: none;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  .nav a:hover,
+  .nav a[aria-current='page'] {
+    color: var(--color-honey-dark);
+  }
+</style>

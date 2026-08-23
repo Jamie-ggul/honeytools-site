@@ -1,0 +1,28 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const reviews = (await getCollection('reviews', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+<BaseLayout
+  title="Reviews"
+  description="Hands-on reviews of AI productivity and SaaS business tools, based on real everyday use."
+>
+  <h1>Reviews</h1>
+  <p class="muted">
+    Every review here is based on a tool I've actually used — not a rewritten spec sheet.
+  </p>
+
+  <div class="card-grid">
+    {reviews.map((review) => (
+      <a class="card" href={`/reviews/${review.slug}/`}>
+        <p class="pill">{review.data.tool}</p>
+        <h3>{review.data.title}</h3>
+        <p>{review.data.description}</p>
+      </a>
+    ))}
+    {reviews.length === 0 && <p class="muted">No reviews published yet.</p>}
+  </div>
+</BaseLayout>

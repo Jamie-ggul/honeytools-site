@@ -1,0 +1,77 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const reviews = (await getCollection('reviews', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 6);
+---
+<BaseLayout
+  title="HoneyTools — Honest Reviews of AI & SaaS Tools"
+  description="Hands-on, no-hype reviews of the AI and SaaS tools people actually use at work — from someone who uses them too."
+>
+  <section class="hero">
+    <h1>Honest reviews of the tools you're already considering.</h1>
+    <p class="lede">
+      No sponsored hype, no rewritten spec sheets. HoneyTools covers AI productivity
+      and SaaS business tools based on real, everyday use — what's actually worth
+      your subscription and what isn't.
+    </p>
+    <div class="hero-actions">
+      <a class="btn" href="/reviews/">Browse Reviews</a>
+      <a class="btn-outline" href="/start-here/">Start Here</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Latest Reviews</h2>
+    <div class="card-grid">
+      {reviews.map((review) => (
+        <a class="card" href={`/reviews/${review.slug}/`}>
+          <p class="pill">{review.data.tool}</p>
+          <h3>{review.data.title}</h3>
+          <p>{review.data.description}</p>
+        </a>
+      ))}
+      {reviews.length === 0 && (
+        <p class="muted">First reviews are coming soon.</p>
+      )}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding: 1rem 0 2rem;
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: 2rem;
+  }
+  .hero h1 {
+    font-size: 2.1rem;
+    max-width: 20ch;
+  }
+  .lede {
+    font-size: 1.05rem;
+    color: var(--color-text-muted);
+    max-width: 56ch;
+  }
+  .hero-actions {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1.2rem;
+    flex-wrap: wrap;
+  }
+  .btn-outline {
+    display: inline-block;
+    padding: 0.75rem 1.4rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--color-honey);
+    color: var(--color-honey-dark);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .btn-outline:hover {
+    background: var(--color-bg-alt);
+    text-decoration: none;
+  }
+</style>

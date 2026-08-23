@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const guides = (await getCollection('guides', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+<BaseLayout
+  title="Guides"
+  description="Practical how-to guides for getting more out of your AI and SaaS tools."
+>
+  <h1>Guides</h1>
+  <p class="muted">Practical walkthroughs — how to actually use these tools well.</p>
+
+  <div class="card-grid">
+    {guides.map((guide) => (
+      <a class="card" href={`/guides/${guide.slug}/`}>
+        <h3>{guide.data.title}</h3>
+        <p>{guide.data.description}</p>
+      </a>
+    ))}
+    {guides.length === 0 && <p class="muted">No guides published yet.</p>}
+  </div>
+</BaseLayout>
