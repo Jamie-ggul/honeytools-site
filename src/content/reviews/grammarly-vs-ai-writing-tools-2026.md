@@ -9,6 +9,8 @@ affiliateApproved: false
 draft: false
 ---
 
+![Illustration of a person organizing writing drafts and notes](/images/reviews/grammarly-hero.png)
+
 **TL;DR:** Grammarly hasn't become useless — but it's no longer the obvious default it used to be. If most of your writing happens in one long document, an AI tool that reads the whole thing at once is probably doing more of your proofreading now than Grammarly is. If you're typing directly into emails, forms, or comment boxes, Grammarly still earns its spot.
 
 ## Why Listen to Me on This
