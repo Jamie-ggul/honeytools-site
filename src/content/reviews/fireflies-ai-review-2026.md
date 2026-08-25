@@ -4,7 +4,7 @@ description: "An honest, research-based look at Fireflies.ai's AI meeting noteta
 tool: "Fireflies.ai"
 pubDate: 2026-08-25
 tags: ["Fireflies.ai", "AI Meeting Assistant", "Meeting Notes", "Productivity Tools"]
-affiliateUrl: "https://fireflies.ai/?fpr=jeongheon40"
+affiliateUrl: "https://fireflies.ai/?fpr=honeytools"
 affiliateApproved: true
 draft: false
 ---
@@ -26,6 +26,8 @@ A few things stand out beyond basic transcription. It does speaker identificatio
 Beyond meetings, it also connects to CRMs (Salesforce, HubSpot) and collaboration tools (Slack, Asana, Trello), and offers a large library of role-specific automations for sales, recruiting, and marketing teams — useful if your primary use case is more specific than "just take notes."
 
 ## Pricing Breakdown (2026)
+
+For the full breakdown including the monthly-vs-annual pricing gap, see the [dedicated Fireflies.ai pricing guide](/reviews/fireflies-ai-pricing-2026/) — the short version is below.
 
 | Plan | Price (billed annually) | What you get |
 |---|---|---|
@@ -86,4 +88,4 @@ For a one-off meeting, maybe not — but Fireflies' advantage is the automatic r
 
 Fireflies.ai does what it says: it takes the manual work out of meeting notes, and the accuracy and multi-language support genuinely stand out against the main alternative. The real question isn't whether it works — it's whether your meeting volume justifies a per-seat subscription. If you're running multiple meetings a week across a team, it's worth trying the free plan to see if it fits your workflow before upgrading.
 
-👉 [Try Fireflies.ai Free](https://fireflies.ai/?fpr=jeongheon40)
+👉 [Try Fireflies.ai Free](https://fireflies.ai/?fpr=honeytools)
