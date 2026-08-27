@@ -23,7 +23,7 @@ At its core, Fireflies.ai is an AI assistant that joins meetings (via Zoom, Goog
 
 A few things stand out beyond basic transcription. It does speaker identification, tracking who said what and how much each person talked. It supports over 100 languages, which matters if your team doesn't meet exclusively in English. And past meetings are fully searchable — you can look up a specific sentence from a call three weeks ago instead of scrolling through a transcript. There's also an AI Q&A feature ("AskFred") that lets you ask questions about a meeting's content directly, rather than rereading the whole thing.
 
-Beyond meetings, it also connects to CRMs (Salesforce, HubSpot) and collaboration tools (Slack, Asana, Trello), and offers a large library of role-specific automations for sales, recruiting, and marketing teams — useful if your primary use case is more specific than "just take notes."
+Beyond meetings, it also connects to CRMs (Salesforce, HubSpot) and collaboration tools (Slack, Asana, Trello), and offers a large library of role-specific automations for sales, recruiting, and marketing teams — useful if your primary use case is more specific than "just take notes." Sales teams specifically got a major expansion in July 2026 with the [AI Sales Suite](/reviews/fireflies-ai-sales-suite-2026/) — deal tracking, automatic CRM updates, and AI-scored calls, positioned as a cheaper alternative to enterprise tools like Gong.
 
 ## Pricing Breakdown (2026)
 
@@ -58,7 +58,7 @@ To keep this balanced, a few recurring complaints are worth knowing before you c
 
 ## Fireflies.ai vs. Otter.ai
 
-This is the comparison most people run into first, since both are AI meeting notetakers competing for the same use case.
+This is the comparison most people run into first, since both are AI meeting notetakers competing for the same use case. The short version is below — for a full feature-by-feature breakdown, see the [dedicated Fireflies.ai vs. Otter.ai comparison](/reviews/fireflies-ai-vs-otter-ai/).
 
 | | Fireflies.ai | Otter.ai |
 |---|---|---|
