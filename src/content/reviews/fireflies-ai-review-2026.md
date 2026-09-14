@@ -73,6 +73,8 @@ Based on this, Fireflies looks like the stronger fit if your team meets in more 
 
 For teams with a real cadence of recurring meetings — sales calls, recruiting interviews, cross-functional syncs — the time saved on note-taking and the ability to search past meetings genuinely adds up, and the free tier is a reasonable way to test that before paying anything. For solo users or teams with only the occasional meeting, the per-seat pricing is harder to justify against how often you'd actually use it, and a simpler free transcription tool might cover the same need without a subscription.
 
+If price or a specific missing feature is what's holding you back, it's worth a look at [six real Fireflies alternatives](/reviews/fireflies-ai-alternatives-2026/) before deciding either way. And if what's actually giving you pause is a bot recording your calls at all, [here's exactly what Fireflies does with your data](/reviews/fireflies-ai-privacy-security-2026/) — retention, encryption, consent, and who can access it.
+
 ## FAQ
 
 **Does the free plan actually work, or is it just a trial?**
