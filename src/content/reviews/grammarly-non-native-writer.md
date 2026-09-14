@@ -52,4 +52,6 @@ I paste in after writing. Writing first lets me focus on the actual content with
 
 If your English writing already gets the job done but you're never quite sure whether a sentence reads the way you meant it to, free Grammarly is a low-effort second check that's earned a permanent spot in my process. It won't make your writing sound more native on its own, but it reliably catches the kind of small, easy-to-miss mistakes that are hardest to see in your own writing.
 
+If you're pasting in anything more sensitive than casual writing — reports, client emails, cover letters — it's also worth knowing [what Grammarly actually does with that text](/reviews/grammarly-privacy-security-2026/) before you make it a daily habit the way I have.
+
 👉 [Try Grammarly Free](https://www.grammarly.com)
