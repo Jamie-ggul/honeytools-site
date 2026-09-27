@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const trends = (await getCollection('trends', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+<BaseLayout
+  title="AI Trends"
+  description="What's actually happening in AI right now — new model releases, product launches, and the stories worth knowing about, explained plainly."
+>
+  <h1>AI Trends</h1>
+  <p class="muted">What's new in AI this week, without the hype.</p>
+
+  <div class="card-grid">
+    {trends.map((trend) => (
+      <a class="card" href={`/trends/${trend.slug}/`}>
+        <h3>{trend.data.title}</h3>
+        <p>{trend.data.description}</p>
+      </a>
+    ))}
+    {trends.length === 0 && <p class="muted">No trend posts published yet.</p>}
+  </div>
+</BaseLayout>
