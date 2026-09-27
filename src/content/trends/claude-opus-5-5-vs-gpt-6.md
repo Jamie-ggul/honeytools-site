@@ -21,7 +21,7 @@ Three separate models, from two companies, in the same short window:
 - **GPT-6 Sol** (OpenAI) — a cheaper, faster GPT-6 variant tuned for recurring coding and agent work, built on the same training foundation as OpenAI's flagship GPT-6 Astra model.
 - **GPT-6 Luna** (OpenAI) — an even cheaper variant, roughly ten times less expensive than Sol, aimed at high-volume routine tasks like summarization and data extraction rather than complex reasoning.
 
-Worth clearing up since it trips people up in search: Sol and Luna are not OpenAI's flagship model. That's GPT-6 Astra, which shipped earlier in September. Sol and Luna are cost-optimized siblings built on Astra's foundation — think of them as the "how do I run this at scale without the flagship price tag" answer, not the top-of-the-line option.
+Worth clearing up since it trips people up in search: Sol and Luna are not OpenAI's flagship model. That's GPT-6 Astra, which shipped earlier in September. Sol and Luna are cost-optimized siblings built on Astra's foundation — think of them as the "how do I run this at scale without the flagship price tag" answer, not the top-of-the-line option. We break down what Astra itself actually does — including a new safety threshold it triggered internally — in our [separate GPT-6 Astra explainer](/trends/gpt-6-astra-explained/).
 
 ## Pricing, Side by Side
 
