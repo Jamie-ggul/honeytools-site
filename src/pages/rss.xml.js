@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 export async function GET(context) {
   const reviews = await getCollection('reviews', ({ data }) => !data.draft);
   const guides = await getCollection('guides', ({ data }) => !data.draft);
+  const trends = await getCollection('trends', ({ data }) => !data.draft);
 
   const items = [
     ...reviews.map((entry) => ({
@@ -17,6 +18,12 @@ export async function GET(context) {
       description: entry.data.description,
       pubDate: entry.data.pubDate,
       link: `/guides/${entry.slug}/`,
+    })),
+    ...trends.map((entry) => ({
+      title: entry.data.title,
+      description: entry.data.description,
+      pubDate: entry.data.pubDate,
+      link: `/trends/${entry.slug}/`,
     })),
   ].sort((a, b) => b.pubDate.valueOf() - a.pubDate.valueOf());
 
