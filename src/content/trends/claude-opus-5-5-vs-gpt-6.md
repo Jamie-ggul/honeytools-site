@@ -1,4 +1,3 @@
-[claude-opus-5-5-vs-gpt-6.md](https://github.com/user-attachments/files/32698337/claude-opus-5-5-vs-gpt-6.md)
 ---
 title: "Claude Opus 5.5 vs GPT-6 Sol and Luna: Which One Should You Actually Use?"
 description: "Anthropic and OpenAI both cut prices and shipped new models within the same week. Here's what Claude Opus 5.5, GPT-6 Sol, and GPT-6 Luna actually do differently — and which one fits your use case."
