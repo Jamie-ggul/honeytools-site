@@ -138,11 +138,15 @@
       "input": 2.0,
       "output": 10.0,
       "cached": 0.1,
-      "note": "Introductory price through November 30, 2026, then $4 / $20 from December 1. Per Google's docs, not available on the free tier or the Google AI Pro plan.",
+      "note": "Introductory price through November 30, 2026, then $4 / $20 from December 1. Per Google's Gemini API pricing page, API use isn't available on the free tier or the Google AI Pro plan.",
       "sources": [
         {
           "label": "Google Gemini API pricing",
           "url": "https://ai.google.dev/gemini-api/docs/pricing"
+        },
+        {
+          "label": "Google Argon rollout post (Oct 13)",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
         }
       ],
       "post": "/trends/gemini-4-argon-explained/"
@@ -154,11 +158,15 @@
       "input": 4.0,
       "output": 20.0,
       "cached": 0.2,
-      "note": "Price from December 1, 2026, after the introductory period ends. Not available on the free tier or the Google AI Pro plan.",
+      "note": "Price from December 1, 2026, after the introductory period ends. Per Google's Gemini API pricing page, API use isn't available on the free tier or the Google AI Pro plan.",
       "sources": [
         {
           "label": "Google Gemini API pricing",
           "url": "https://ai.google.dev/gemini-api/docs/pricing"
+        },
+        {
+          "label": "Google Argon rollout post (Oct 13)",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
         }
       ],
       "post": "/trends/gemini-4-argon-explained/"
