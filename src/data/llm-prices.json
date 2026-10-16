@@ -1,0 +1,115 @@
+{
+  "lastUpdated": "2026-10-16",
+  "currency": "USD",
+  "unit": "per 1 million tokens",
+  "models": [
+    {
+      "id": "claude-opus-5-5",
+      "name": "Claude Opus 5.5",
+      "vendor": "Anthropic",
+      "input": 4.0,
+      "output": 20.0,
+      "cached": 0.2,
+      "note": "",
+      "sources": [
+        { "label": "SiliconANGLE", "url": "https://siliconangle.com/2026/09/22/anthropic-releases-claude-opus-5-5-and-openai-counters-with-two-cheaper-gpt-6-models/" }
+      ],
+      "post": "/trends/claude-opus-5-5-vs-gpt-6/"
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "name": "Claude Sonnet 5.5",
+      "vendor": "Anthropic",
+      "input": 2.0,
+      "output": 10.0,
+      "cached": 0.2,
+      "note": "",
+      "sources": [
+        { "label": "MarkTechPost", "url": "https://www.marktechpost.com/2026/09/28/anthropic-releases-claude-sonnet-5-5-70-6-on-terminal-bench-4-0-at-the-same-2-10-price/" },
+        { "label": "DataCamp", "url": "https://www.datacamp.com/blog/gpt-6-1-sol-vs-claude-sonnet-5-5" }
+      ],
+      "post": "/trends/claude-sonnet-5-5-vs-gpt-6-1-sol/"
+    },
+    {
+      "id": "gpt-6-astra",
+      "name": "GPT-6 Astra",
+      "vendor": "OpenAI",
+      "input": 10.0,
+      "output": 50.0,
+      "cached": null,
+      "note": "Standard mode, OpenAI API. Fast mode costs 2x. Azure pricing differs.",
+      "sources": [
+        { "label": "OpenAI", "url": "https://openai.com/index/gpt-6-astra/" }
+      ],
+      "post": "/trends/gpt-6-astra-explained/"
+    },
+    {
+      "id": "gpt-6-1-sol",
+      "name": "GPT-6.1 Sol",
+      "vendor": "OpenAI",
+      "input": 2.0,
+      "output": 10.0,
+      "cached": 0.1,
+      "note": "Requests with prompts over 272K tokens are billed at a higher rate (reported by DataCamp), so costs for those are understated here.",
+      "longContextThreshold": 272000,
+      "sources": [
+        { "label": "DataCamp", "url": "https://www.datacamp.com/blog/gpt-6-1-sol-vs-claude-sonnet-5-5" }
+      ],
+      "post": "/trends/claude-sonnet-5-5-vs-gpt-6-1-sol/"
+    },
+    {
+      "id": "gpt-6-sol",
+      "name": "GPT-6 Sol",
+      "vendor": "OpenAI",
+      "input": 2.0,
+      "output": 10.0,
+      "cached": null,
+      "note": "",
+      "sources": [
+        { "label": "SiliconANGLE", "url": "https://siliconangle.com/2026/09/22/anthropic-releases-claude-opus-5-5-and-openai-counters-with-two-cheaper-gpt-6-models/" }
+      ],
+      "post": "/trends/claude-opus-5-5-vs-gpt-6/"
+    },
+    {
+      "id": "gpt-6-luna",
+      "name": "GPT-6 Luna",
+      "vendor": "OpenAI",
+      "input": 0.1,
+      "output": 0.5,
+      "cached": null,
+      "note": "",
+      "sources": [
+        { "label": "SiliconANGLE", "url": "https://siliconangle.com/2026/09/22/anthropic-releases-claude-opus-5-5-and-openai-counters-with-two-cheaper-gpt-6-models/" }
+      ],
+      "post": "/trends/claude-opus-5-5-vs-gpt-6/"
+    },
+    {
+      "id": "gemini-4-argon-intro",
+      "name": "Gemini 4 Argon (intro price)",
+      "vendor": "Google",
+      "input": 2.0,
+      "output": 10.0,
+      "cached": null,
+      "note": "Limited release, not generally available. Introductory pricing; rises to $4 / $20 afterward.",
+      "sources": [
+        { "label": "VentureBeat", "url": "https://venturebeat.com/technology/google-unveils-gemini-4-argon-retaking-benchmark-lead-over-openai-and-anthropic-but-in-limited-release" },
+        { "label": "DataCamp", "url": "https://www.datacamp.com/blog/gemini-4-argon" }
+      ],
+      "post": "/trends/gemini-4-argon-explained/"
+    },
+    {
+      "id": "gemini-4-argon-standard",
+      "name": "Gemini 4 Argon (after intro)",
+      "vendor": "Google",
+      "input": 4.0,
+      "output": 20.0,
+      "cached": null,
+      "note": "Limited release, not generally available. Post-introductory pricing as reported.",
+      "sources": [
+        { "label": "VentureBeat", "url": "https://venturebeat.com/technology/google-unveils-gemini-4-argon-retaking-benchmark-lead-over-openai-and-anthropic-but-in-limited-release" },
+        { "label": "DataCamp", "url": "https://www.datacamp.com/blog/gemini-4-argon" }
+      ],
+      "post": "/trends/gemini-4-argon-explained/"
+    }
+  ]
+}

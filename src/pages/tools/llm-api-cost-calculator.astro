@@ -1,0 +1,268 @@
+---
+import ToolLayout from '../../layouts/ToolLayout.astro';
+import prices from '../../data/llm-prices.json';
+
+const updated = new Date(prices.lastUpdated + 'T00:00:00Z').toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  timeZone: 'UTC',
+});
+---
+<ToolLayout
+  title="LLM API Cost Calculator: Compare Claude, GPT-6, and Gemini 4 Pricing"
+  description="Free calculator that estimates your monthly API bill across Claude Opus 5.5, Claude Sonnet 5.5, GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna, and Gemini 4 Argon. Includes cached-input pricing and a rough token estimator."
+  updated={updated}
+>
+  <p>
+    Enter your typical request size and monthly volume to see what the same workload would cost on each
+    model. Everything runs in your browser; nothing you type is sent anywhere.
+  </p>
+
+  <form id="calc" class="calc" onsubmit="return false">
+    <div class="field">
+      <label for="inTokens">Input tokens per request</label>
+      <input id="inTokens" type="number" min="0" step="1" value="2000" inputmode="numeric" />
+    </div>
+    <div class="field">
+      <label for="outTokens">Output tokens per request</label>
+      <input id="outTokens" type="number" min="0" step="1" value="500" inputmode="numeric" />
+    </div>
+    <div class="field">
+      <label for="requests">Requests per month</label>
+      <input id="requests" type="number" min="0" step="1" value="10000" inputmode="numeric" />
+    </div>
+    <div class="field">
+      <label for="cachedPct">Share of input that is cached (%)</label>
+      <input id="cachedPct" type="number" min="0" max="100" step="1" value="0" inputmode="numeric" />
+      <small class="muted">Only applied to models with a published cached-input price.</small>
+    </div>
+  </form>
+
+  <details class="estimator">
+    <summary>Not sure how many tokens your prompt is? Estimate from text</summary>
+    <p class="muted">
+      Paste a sample prompt. This uses a rough rule of about 4 characters per token for English text.
+      Real tokenizers differ by model and language, so treat it as a ballpark.
+    </p>
+    <textarea id="sample" rows="5" placeholder="Paste a sample prompt here..."></textarea>
+    <p id="sampleResult" class="muted"></p>
+    <button type="button" id="useSample" class="btn small">Use as input tokens</button>
+  </details>
+
+  <h2>Estimated cost by model</h2>
+  <div class="table-wrap">
+    <table id="results">
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>Input / Output<br /><span class="muted">per 1M tokens</span></th>
+          <th>Cost per request</th>
+          <th>Cost per month</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <p id="warnings" class="muted"></p>
+
+  <script is:inline type="application/json" id="price-data" set:html={JSON.stringify(prices)} />
+
+  <h2>How this is calculated</h2>
+  <p>
+    Cost per request = (uncached input tokens × input price + cached input tokens × cached price + output
+    tokens × output price) ÷ 1,000,000. Monthly cost multiplies that by your request volume. Prices are
+    list prices in US dollars per million tokens, as reported in the sources below; they don't include
+    taxes, volume discounts, batch discounts, or cloud-marketplace markups.
+  </p>
+
+  <h2>Prices and sources</h2>
+  <ul class="sources">
+    {prices.models.map((m) => {
+      const priceText = `$${m.input.toFixed(2)} input / $${m.output.toFixed(2)} output` + (m.cached !== null ? ` / $${m.cached.toFixed(2)} cached` : '') + '.';
+      return (
+        <li>
+          <strong>{m.name}</strong>: {priceText}{m.note ? ' ' + m.note : ''} Sources: {m.sources.map((s, i) => (<Fragment>{i > 0 ? ', ' : ''}<a href={s.url} rel="noopener">{s.label}</a></Fragment>))}. <a href={m.post}>Our explainer</a>.
+        </li>
+      );
+    })}
+  </ul>
+
+  <div class="callout">
+    <p>
+      <strong>Heads up:</strong> AI pricing changes often, and several of these models launched only
+      weeks ago. We update this table by hand from the sources above, so check the vendor's own pricing
+      page before you commit to a budget. Gemini 4 Argon is in limited release, so you may not be able to
+      use it yet.
+    </p>
+  </div>
+
+  <h2>Related reading</h2>
+  <ul>
+    <li><a href="/trends/claude-sonnet-5-5-vs-gpt-6-1-sol/">Claude Sonnet 5.5 vs GPT-6.1 Sol: same $2/$10 price, different bill</a></li>
+    <li><a href="/trends/claude-opus-5-5-vs-gpt-6/">Claude Opus 5.5 vs GPT-6</a></li>
+    <li><a href="/trends/gpt-6-astra-explained/">GPT-6 Astra explained</a></li>
+    <li><a href="/trends/gemini-4-argon-explained/">Gemini 4 Argon explained</a></li>
+  </ul>
+
+  <script is:inline>
+    (function () {
+      var data = JSON.parse(document.getElementById('price-data').textContent);
+      var models = data.models;
+      var $ = function (id) { return document.getElementById(id); };
+      var tbody = document.querySelector('#results tbody');
+      var warnings = $('warnings');
+
+      var money = function (n) {
+        if (n === 0) return '$0.00';
+        if (n < 0.01) return '$' + n.toFixed(5);
+        if (n < 1) return '$' + n.toFixed(4);
+        return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      };
+      var num = function (id, max) {
+        var v = parseFloat($(id).value);
+        if (!isFinite(v) || v < 0) v = 0;
+        if (max !== undefined && v > max) v = max;
+        return v;
+      };
+
+      function costFor(m, inTok, outTok, cachedShare) {
+        var cached = m.cached !== null ? inTok * cachedShare : 0;
+        var uncached = inTok - cached;
+        var cachedPrice = m.cached !== null ? m.cached : 0;
+        return (uncached * m.input + cached * cachedPrice + outTok * m.output) / 1e6;
+      }
+
+      function render() {
+        var inTok = num('inTokens');
+        var outTok = num('outTokens');
+        var reqs = num('requests');
+        var share = num('cachedPct', 100) / 100;
+
+        var rows = models.map(function (m) {
+          var per = costFor(m, inTok, outTok, share);
+          return { m: m, per: per, month: per * reqs };
+        }).sort(function (a, b) { return a.month - b.month; });
+
+        tbody.textContent = '';
+        rows.forEach(function (r, i) {
+          var tr = document.createElement('tr');
+          var c1 = document.createElement('td');
+          c1.textContent = r.m.name + (i === 0 ? ' (lowest)' : '');
+          if (i === 0) c1.style.fontWeight = '700';
+          var c2 = document.createElement('td');
+          c2.textContent = '$' + r.m.input + ' / $' + r.m.output;
+          var c3 = document.createElement('td');
+          c3.textContent = money(r.per);
+          var c4 = document.createElement('td');
+          c4.textContent = money(r.month);
+          c4.style.fontWeight = '600';
+          tr.appendChild(c1); tr.appendChild(c2); tr.appendChild(c3); tr.appendChild(c4);
+          tbody.appendChild(tr);
+        });
+
+        var msgs = [];
+        models.forEach(function (m) {
+          if (m.longContextThreshold && inTok > m.longContextThreshold) {
+            msgs.push(m.name + ': your prompt is over ' + m.longContextThreshold.toLocaleString('en-US') +
+              ' tokens, where the vendor reprices requests at a higher rate, so the figure above is a lower bound.');
+          }
+        });
+        if (share > 0) {
+          var noCache = models.filter(function (m) { return m.cached === null; }).map(function (m) { return m.name; });
+          if (noCache.length) {
+            msgs.push('No published cached-input price for: ' + noCache.join(', ') +
+              '. Those rows are calculated with all input at the standard rate.');
+          }
+        }
+        warnings.textContent = msgs.join(' ');
+      }
+
+      ['inTokens', 'outTokens', 'requests', 'cachedPct'].forEach(function (id) {
+        $(id).addEventListener('input', render);
+      });
+
+      var estimate = 0;
+      $('sample').addEventListener('input', function () {
+        var len = $('sample').value.length;
+        estimate = Math.ceil(len / 4);
+        $('sampleResult').textContent = len
+          ? len.toLocaleString('en-US') + ' characters is roughly ' + estimate.toLocaleString('en-US') + ' tokens.'
+          : '';
+      });
+      $('useSample').addEventListener('click', function () {
+        if (estimate > 0) {
+          $('inTokens').value = estimate;
+          render();
+        }
+      });
+
+      render();
+    })();
+  </script>
+</ToolLayout>
+
+<style>
+  .calc {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1rem;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 1.1rem 1.2rem;
+    margin: 1.2rem 0;
+  }
+  .field label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+  .field small {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.78rem;
+  }
+  input[type='number'],
+  textarea {
+    width: 100%;
+    font: inherit;
+    padding: 0.55rem 0.7rem;
+    color: var(--color-text);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+  }
+  input[type='number']:focus,
+  textarea:focus {
+    outline: 2px solid var(--color-honey);
+    outline-offset: 1px;
+  }
+  .estimator {
+    margin: 0 0 1.5rem;
+  }
+  .estimator summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--color-honey-dark);
+    margin-bottom: 0.6rem;
+  }
+  .btn.small {
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+  }
+  .table-wrap {
+    overflow-x: auto;
+  }
+  .sources {
+    padding-left: 1.2rem;
+    font-size: 0.92rem;
+  }
+  .sources li {
+    margin-bottom: 0.6rem;
+  }
+</style>
