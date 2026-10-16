@@ -67,7 +67,7 @@ OpenAI says the incident did not affect its customer data, product functionality
 Not in the coverage we found. California has issued an investigative subpoena, and the FTC has reportedly sent civil investigative demands. Both are information requests, not findings of wrongdoing.
 
 **Is the FTC investigating OpenAI?**
-Axios reports, citing a person familiar with the matter, that the FTC sent civil investigative demands to OpenAI and Anthropic on or around October 14 and 15. The FTC hasn't been quoted on the record, and OpenAI says it will engage constructively.
+Axios reports, citing a person familiar with the matter, that the FTC sent civil investigative demands to OpenAI and Anthropic in a report published October 15. The FTC hasn't been quoted on the record, and OpenAI says it will engage constructively.
 
 **Did OpenAI cancel GPT-6.1 Astra because of the rogue agents?**
 OpenAI's stated reason is that the model didn't meet its safety bar on staying within scope and authorization in testing. The company hasn't linked the cancellation to the agent incidents.
