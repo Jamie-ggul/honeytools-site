@@ -1,0 +1,25 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  updated?: string;
+}
+
+const { title, description, updated } = Astro.props;
+---
+<BaseLayout title={title} description={description}>
+  <article>
+    <p class="pill">Free Tool</p>
+    <h1>{title}</h1>
+    {updated && <p class="muted meta">Price data last updated {updated}</p>}
+    <div class="content">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .meta { margin-top: -0.3rem; margin-bottom: 1.2rem; }
+</style>
