@@ -72,8 +72,10 @@ const updated = new Date(prices.lastUpdated + 'T00:00:00Z').toLocaleDateString('
   <p>
     Cost per request = (uncached input tokens × input price + cached input tokens × cached price + output
     tokens × output price) ÷ 1,000,000. Monthly cost multiplies that by your request volume. Prices are
-    list prices in US dollars per million tokens, as reported in the sources below; they don't include
-    taxes, volume discounts, batch discounts, or cloud-marketplace markups.
+    standard-tier list prices in US dollars per million tokens, checked against each vendor's own pricing
+    page on the date above. They don't include batch discounts, fast or priority modes, regional or
+    data-residency uplifts, taxes, or cloud-marketplace markups. Where a vendor charges more for very long
+    prompts, the calculator applies that rate once your input passes the threshold.
   </p>
 
   <h2>Prices and sources</h2>
@@ -91,9 +93,12 @@ const updated = new Date(prices.lastUpdated + 'T00:00:00Z').toLocaleDateString('
   <div class="callout">
     <p>
       <strong>Heads up:</strong> AI pricing changes often, and several of these models launched only
-      weeks ago. We update this table by hand from the sources above, so check the vendor's own pricing
-      page before you commit to a budget. Gemini 4 Argon is in limited release, so you may not be able to
-      use it yet.
+      weeks ago. We update this table by hand and last checked it against the vendors' pricing pages on
+      the date above, so confirm on the vendor's page before you commit to a budget. Also keep in mind
+      that different models count tokens differently: Anthropic says Claude 4.7 and later models use a
+      tokenizer that produces about 30% more tokens for the same text, so the same prompt can cost more on
+      Claude than the per-token price alone suggests. Gemini 4 Argon's introductory price runs through
+      November 30, 2026, and it isn't available on Google's free tier or the Google AI Pro plan.
     </p>
   </div>
 
@@ -127,10 +132,16 @@ const updated = new Date(prices.lastUpdated + 'T00:00:00Z').toLocaleDateString('
       };
 
       function costFor(m, inTok, outTok, cachedShare) {
-        var cached = m.cached !== null ? inTok * cachedShare : 0;
+        var inP = m.input, outP = m.output, cP = m.cached;
+        var lc = m.longContext;
+        if (lc && inTok > lc.threshold) {
+          inP = inP * lc.inputMult;
+          outP = outP * lc.outputMult;
+          if (cP !== null) cP = cP * lc.inputMult;
+        }
+        var cached = cP !== null ? inTok * cachedShare : 0;
         var uncached = inTok - cached;
-        var cachedPrice = m.cached !== null ? m.cached : 0;
-        return (uncached * m.input + cached * cachedPrice + outTok * m.output) / 1e6;
+        return (uncached * inP + cached * (cP !== null ? cP : 0) + outTok * outP) / 1e6;
       }
 
       function render() {
@@ -162,12 +173,17 @@ const updated = new Date(prices.lastUpdated + 'T00:00:00Z').toLocaleDateString('
         });
 
         var msgs = [];
+        var lcApplied = [], lcUnverified = [];
         models.forEach(function (m) {
-          if (m.longContextThreshold && inTok > m.longContextThreshold) {
-            msgs.push(m.name + ': your prompt is over ' + m.longContextThreshold.toLocaleString('en-US') +
-              ' tokens, where the vendor reprices requests at a higher rate, so the figure above is a lower bound.');
-          }
+          if (m.longContext && inTok > m.longContext.threshold) lcApplied.push(m.name);
+          if (m.longContextUnverified && inTok > 272000) lcUnverified.push(m.name);
         });
+        if (lcApplied.length) {
+          msgs.push('Long-prompt pricing applied (over 272,000 input tokens, 2x input and 1.5x output) for: ' + lcApplied.join(', ') + '.');
+        }
+        if (lcUnverified.length) {
+          msgs.push(lcUnverified.join(' and ') + ': OpenAI lists higher long-context rates but we could not confirm the threshold, so those rows may be understated for prompts this long.');
+        }
         if (share > 0) {
           var noCache = models.filter(function (m) { return m.cached === null; }).map(function (m) { return m.name; });
           if (noCache.length) {

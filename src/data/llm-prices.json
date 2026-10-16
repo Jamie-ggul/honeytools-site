@@ -10,9 +10,12 @@
       "input": 4.0,
       "output": 20.0,
       "cached": 0.2,
-      "note": "",
+      "note": "Standard tier. Anthropic's pricing page notes that Claude 4.7 and later models use a tokenizer that produces about 30% more tokens for the same text than older ones, so the same content can cost more than the per-token price suggests.",
       "sources": [
-        { "label": "SiliconANGLE", "url": "https://siliconangle.com/2026/09/22/anthropic-releases-claude-opus-5-5-and-openai-counters-with-two-cheaper-gpt-6-models/" }
+        {
+          "label": "Anthropic pricing docs",
+          "url": "https://platform.claude.com/docs/en/about-claude/pricing"
+        }
       ],
       "post": "/trends/claude-opus-5-5-vs-gpt-6/"
     },
@@ -22,11 +25,13 @@
       "vendor": "Anthropic",
       "input": 2.0,
       "output": 10.0,
-      "cached": 0.2,
-      "note": "",
+      "cached": 0.1,
+      "note": "Standard tier. Same tokenizer note as Opus 5.5: about 30% more tokens for the same text than older Claude models, per Anthropic.",
       "sources": [
-        { "label": "MarkTechPost", "url": "https://www.marktechpost.com/2026/09/28/anthropic-releases-claude-sonnet-5-5-70-6-on-terminal-bench-4-0-at-the-same-2-10-price/" },
-        { "label": "DataCamp", "url": "https://www.datacamp.com/blog/gpt-6-1-sol-vs-claude-sonnet-5-5" }
+        {
+          "label": "Anthropic pricing docs",
+          "url": "https://platform.claude.com/docs/en/about-claude/pricing"
+        }
       ],
       "post": "/trends/claude-sonnet-5-5-vs-gpt-6-1-sol/"
     },
@@ -36,12 +41,20 @@
       "vendor": "OpenAI",
       "input": 10.0,
       "output": 50.0,
-      "cached": null,
-      "note": "Standard mode, OpenAI API. Fast mode costs 2x. Azure pricing differs.",
+      "cached": 1.0,
+      "note": "Standard tier, short context. OpenAI's pricing page lists higher long-context rates (2x input, 1.5x output) but the threshold wasn't stated on the page. Fast mode costs about 2x.",
       "sources": [
-        { "label": "OpenAI", "url": "https://openai.com/index/gpt-6-astra/" }
+        {
+          "label": "OpenAI API pricing",
+          "url": "https://developers.openai.com/api/docs/pricing"
+        },
+        {
+          "label": "OpenAI launch post",
+          "url": "https://openai.com/index/gpt-6-astra/"
+        }
       ],
-      "post": "/trends/gpt-6-astra-explained/"
+      "post": "/trends/gpt-6-astra-explained/",
+      "longContextUnverified": true
     },
     {
       "id": "gpt-6-1-sol",
@@ -50,12 +63,27 @@
       "input": 2.0,
       "output": 10.0,
       "cached": 0.1,
-      "note": "Requests with prompts over 272K tokens are billed at a higher rate (reported by DataCamp), so costs for those are understated here.",
-      "longContextThreshold": 272000,
+      "note": "Standard tier. OpenAI lists long-context rates of 2x input/cached and 1.5x output; the 272K-token threshold is the one OpenAI documents for GPT-6 Sol and DataCamp reports for 6.1 Sol.",
       "sources": [
-        { "label": "DataCamp", "url": "https://www.datacamp.com/blog/gpt-6-1-sol-vs-claude-sonnet-5-5" }
+        {
+          "label": "OpenAI API pricing",
+          "url": "https://developers.openai.com/api/docs/pricing"
+        },
+        {
+          "label": "OpenAI launch post",
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
+        },
+        {
+          "label": "DataCamp",
+          "url": "https://www.datacamp.com/blog/gpt-6-1-sol-vs-claude-sonnet-5-5"
+        }
       ],
-      "post": "/trends/claude-sonnet-5-5-vs-gpt-6-1-sol/"
+      "post": "/trends/claude-sonnet-5-5-vs-gpt-6-1-sol/",
+      "longContext": {
+        "threshold": 272000,
+        "inputMult": 2.0,
+        "outputMult": 1.5
+      }
     },
     {
       "id": "gpt-6-sol",
@@ -63,12 +91,24 @@
       "vendor": "OpenAI",
       "input": 2.0,
       "output": 10.0,
-      "cached": null,
-      "note": "",
+      "cached": 0.2,
+      "note": "Standard tier. OpenAI's model page says prompts over 272K input tokens are billed at 2x input and cached rates and 1.5x output. OpenAI now points to GPT-6.1 Sol as the newer Sol model.",
       "sources": [
-        { "label": "SiliconANGLE", "url": "https://siliconangle.com/2026/09/22/anthropic-releases-claude-opus-5-5-and-openai-counters-with-two-cheaper-gpt-6-models/" }
+        {
+          "label": "OpenAI GPT-6 Sol model page",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6-sol"
+        },
+        {
+          "label": "SiliconANGLE",
+          "url": "https://siliconangle.com/2026/09/22/anthropic-releases-claude-opus-5-5-and-openai-counters-with-two-cheaper-gpt-6-models/"
+        }
       ],
-      "post": "/trends/claude-opus-5-5-vs-gpt-6/"
+      "post": "/trends/claude-opus-5-5-vs-gpt-6/",
+      "longContext": {
+        "threshold": 272000,
+        "inputMult": 2.0,
+        "outputMult": 1.5
+      }
     },
     {
       "id": "gpt-6-luna",
@@ -76,12 +116,20 @@
       "vendor": "OpenAI",
       "input": 0.1,
       "output": 0.5,
-      "cached": null,
-      "note": "",
+      "cached": 0.01,
+      "note": "Standard tier, short context. OpenAI lists higher long-context rates but the threshold wasn't stated on the page.",
       "sources": [
-        { "label": "SiliconANGLE", "url": "https://siliconangle.com/2026/09/22/anthropic-releases-claude-opus-5-5-and-openai-counters-with-two-cheaper-gpt-6-models/" }
+        {
+          "label": "OpenAI API pricing",
+          "url": "https://developers.openai.com/api/docs/pricing"
+        },
+        {
+          "label": "SiliconANGLE",
+          "url": "https://siliconangle.com/2026/09/22/anthropic-releases-claude-opus-5-5-and-openai-counters-with-two-cheaper-gpt-6-models/"
+        }
       ],
-      "post": "/trends/claude-opus-5-5-vs-gpt-6/"
+      "post": "/trends/claude-opus-5-5-vs-gpt-6/",
+      "longContextUnverified": true
     },
     {
       "id": "gemini-4-argon-intro",
@@ -89,27 +137,32 @@
       "vendor": "Google",
       "input": 2.0,
       "output": 10.0,
-      "cached": null,
-      "note": "Limited release, not generally available. Introductory pricing; rises to $4 / $20 afterward.",
+      "cached": 0.1,
+      "note": "Introductory price through November 30, 2026, then $4 / $20 from December 1. Per Google's docs, not available on the free tier or the Google AI Pro plan.",
       "sources": [
-        { "label": "VentureBeat", "url": "https://venturebeat.com/technology/google-unveils-gemini-4-argon-retaking-benchmark-lead-over-openai-and-anthropic-but-in-limited-release" },
-        { "label": "DataCamp", "url": "https://www.datacamp.com/blog/gemini-4-argon" }
+        {
+          "label": "Google Gemini API pricing",
+          "url": "https://ai.google.dev/gemini-api/docs/pricing"
+        }
       ],
       "post": "/trends/gemini-4-argon-explained/"
     },
     {
       "id": "gemini-4-argon-standard",
-      "name": "Gemini 4 Argon (after intro)",
+      "name": "Gemini 4 Argon (from Dec 1)",
       "vendor": "Google",
       "input": 4.0,
       "output": 20.0,
-      "cached": null,
-      "note": "Limited release, not generally available. Post-introductory pricing as reported.",
+      "cached": 0.2,
+      "note": "Price from December 1, 2026, after the introductory period ends. Not available on the free tier or the Google AI Pro plan.",
       "sources": [
-        { "label": "VentureBeat", "url": "https://venturebeat.com/technology/google-unveils-gemini-4-argon-retaking-benchmark-lead-over-openai-and-anthropic-but-in-limited-release" },
-        { "label": "DataCamp", "url": "https://www.datacamp.com/blog/gemini-4-argon" }
+        {
+          "label": "Google Gemini API pricing",
+          "url": "https://ai.google.dev/gemini-api/docs/pricing"
+        }
       ],
       "post": "/trends/gemini-4-argon-explained/"
     }
-  ]
+  ],
+  "verifiedAgainst": "Official vendor pricing pages, 2026-10-16"
 }
