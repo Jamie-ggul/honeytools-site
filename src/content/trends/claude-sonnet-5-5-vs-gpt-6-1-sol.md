@@ -33,6 +33,8 @@ The base rate matches, but two billing details change what you actually pay, acc
 
 Both of these only matter at scale. If you're sending short prompts, the price really is the same.
 
+Want to see what this means for your own usage? Plug your request size and volume into our free [LLM API cost calculator](/tools/llm-api-cost-calculator/).
+
 ## Benchmarks: Mostly Apples to Oranges
 
 The vendors mostly benchmarked against other models rather than each other, which makes direct comparison tricky:

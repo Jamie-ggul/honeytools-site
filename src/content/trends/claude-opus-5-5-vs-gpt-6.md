@@ -33,6 +33,8 @@ Worth clearing up since it trips people up in search: Sol and Luna are not OpenA
 
 Anthropic also cut cached-input pricing by 60% (to $0.20/1M tokens) with Opus 5.5, and OpenAI discounted cached reads by 90% for the new GPT-6 variants — both companies are clearly optimizing for the reality that most production usage today is repeated, cached-context calls rather than one-off prompts.
 
+To see what these prices mean for a real workload, try our free [LLM API cost calculator](/tools/llm-api-cost-calculator/).
+
 ## Benchmarks, With the Usual Caveat
 
 Independent tracking from Artificial Analysis puts Claude Opus 5.5 (max effort) at an Intelligence Index score of 58, against GPT-6 Sol's max configuration at 48 — a meaningful gap in raw capability. Anthropic's own release figures show similar jumps on agentic-coding-specific tests: Opus 5.5 scored 66.4% on Terminal-Bench 4.0 versus Opus 5's 55.8%, and 40% on AutomationBench versus 26.9% for the previous version.
