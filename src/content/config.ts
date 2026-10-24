@@ -23,6 +23,8 @@ const guidesCollection = defineCollection({
     pubDate: z.date(),
     updatedDate: z.date().optional(),
     tags: z.array(z.string()).default([]),
+    // Set true when the guide contains affiliate/referral links: shows the disclosure above the content.
+    affiliate: z.boolean().default(false),
     draft: z.boolean().default(false),
   }),
 });

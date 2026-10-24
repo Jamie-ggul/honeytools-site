@@ -67,6 +67,7 @@ Meta reports that the model refused 99.2% of cyber jailbreak attempts on its int
 
 - **Hosted APIs:** Baseten, Fireworks AI, Groq (limited preview), Modal, Nebius, OpenRouter, and Together AI, according to Meta.
 - **Cloud catalogs:** Amazon SageMaker AI, Google Cloud Model Garden, and Microsoft Foundry Models.
+- **Renting GPUs yourself:** possible but expensive; see our [guide to renting GPUs for giant open models](/guides/rent-gpu-to-run-open-models/) for rough hourly costs and when a hosted API is cheaper.
 - **Pricing:** Meta doesn't publish a price. One third-party writeup captured an OpenRouter route on October 16 at $1.25 per million input tokens, $4.25 per million output tokens, and $0.15 per million cached input tokens, but route prices change without notice and other hosts may differ. Check the provider's page before budgeting, and see our [LLM API cost calculator](/tools/llm-api-cost-calculator/) for how to model costs once you have a price.
 
 ## Who Should Actually Care About This
