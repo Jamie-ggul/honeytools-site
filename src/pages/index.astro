@@ -5,6 +5,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const reviews = (await getCollection('reviews', ({ data }) => !data.draft))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 6);
+
+const trends = (await getCollection('trends', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 6);
 ---
 <BaseLayout
   title="HoneyTools — Honest Reviews of AI & SaaS Tools"
@@ -37,10 +41,41 @@ const reviews = (await getCollection('reviews', ({ data }) => !data.draft))
         <p class="muted">First reviews are coming soon.</p>
       )}
     </div>
+    <p class="more"><a href="/reviews/">See all reviews &rarr;</a></p>
+  </section>
+
+  <section>
+    <h2>Latest AI Trends</h2>
+    <div class="card-grid">
+      {trends.map((trend) => (
+        <a class="card" href={`/trends/${trend.slug}/`}>
+          <p class="pill">AI Trend</p>
+          <h3>{trend.data.title}</h3>
+          <p>{trend.data.description}</p>
+        </a>
+      ))}
+    </div>
+    <p class="more"><a href="/trends/">See all AI Trends &rarr;</a></p>
+  </section>
+
+  <section>
+    <h2>Free Tools</h2>
+    <div class="card-grid">
+      <a class="card" href="/tools/llm-api-cost-calculator/">
+        <p class="pill">Free Tool</p>
+        <h3>LLM API Cost Calculator</h3>
+        <p>Compare monthly costs across Claude, GPT-6, and Gemini 4 with cached-input pricing and sourced, dated prices.</p>
+      </a>
+    </div>
+    <p class="more"><a href="/tools/">See all tools &rarr;</a></p>
   </section>
 </BaseLayout>
 
 <style>
+  .more {
+    margin-top: 0.8rem;
+    font-weight: 600;
+  }
   .hero {
     padding: 1rem 0 2rem;
     border-bottom: 1px solid var(--color-border);
