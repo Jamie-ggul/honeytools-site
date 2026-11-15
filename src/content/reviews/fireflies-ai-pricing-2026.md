@@ -30,7 +30,7 @@ Pro adds:
 - 30 AI credits instead of 20
 - A personal AI assistant, email assistant, and voice agent features
 
-This is the tier that makes sense once storage — not features — becomes the actual blocker on free.
+This is the tier that makes sense once storage — not features — becomes the actual blocker on free. Pro is also where the pricing page starts listing "Unlimited integrations"; our [Fireflies integrations guide](/reviews/fireflies-ai-integrations-2026/) covers what that means in practice.
 
 ## Fireflies.ai Business: What Changes
 
@@ -41,7 +41,7 @@ Business adds:
 - Conversation intelligence and team-level analytics
 - Multi-language mode for teams that meet in more than one language
 
-Business is the plan most likely to fit a team with a real, ongoing meeting cadence — the unlimited storage alone removes the thing most likely to force an upgrade later.
+Business is the plan most likely to fit a team with a real, ongoing meeting cadence — the unlimited storage alone removes the thing most likely to force an upgrade later. Business is also the only plan with Integration Rules, which decide which meetings get sent to which tool (see the [Fireflies integrations guide](/reviews/fireflies-ai-integrations-2026/)).
 
 ## The Pricing Detail Most People Miss
 
