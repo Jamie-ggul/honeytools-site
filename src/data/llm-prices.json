@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-16",
+  "lastUpdated": "2026-11-15",
   "currency": "USD",
   "unit": "per 1 million tokens",
   "models": [
@@ -34,6 +34,41 @@
         }
       ],
       "post": "/trends/claude-sonnet-5-5-vs-gpt-6-1-sol/"
+    },
+    {
+      "id": "claude-haiku-5-5",
+      "name": "Claude Haiku 5.5",
+      "vendor": "Anthropic",
+      "input": 0.1,
+      "output": 0.5,
+      "cached": 0.01,
+      "longContext": {
+        "inputMult": 5.0,
+        "outputMult": 5.0,
+        "threshold": 100000
+      },
+      "note": "Standard tier. Anthropic's pricing page lists higher rates ($0.50 input, $0.05 cache hit, $2.50 output) for prompts over 100,000 tokens; the calculator applies them above that threshold.",
+      "sources": [
+        {
+          "label": "Anthropic pricing docs",
+          "url": "https://platform.claude.com/docs/en/about-claude/pricing"
+        }
+      ]
+    },
+    {
+      "id": "claude-fable-5-2",
+      "name": "Claude Fable 5.2",
+      "vendor": "Anthropic",
+      "input": 8.0,
+      "output": 40.0,
+      "cached": 0.2,
+      "note": "Standard tier, per Anthropic's pricing page.",
+      "sources": [
+        {
+          "label": "Anthropic pricing docs",
+          "url": "https://platform.claude.com/docs/en/about-claude/pricing"
+        }
+      ]
     },
     {
       "id": "gpt-6-astra",
@@ -84,6 +119,21 @@
         "inputMult": 2.0,
         "outputMult": 1.5
       }
+    },
+    {
+      "id": "gpt-6-1-terra",
+      "name": "GPT-6.1 Terra",
+      "vendor": "OpenAI",
+      "input": 1.0,
+      "output": 5.0,
+      "cached": 0.05,
+      "note": "Standard tier, per OpenAI's pricing page.",
+      "sources": [
+        {
+          "label": "OpenAI API pricing",
+          "url": "https://developers.openai.com/api/docs/pricing"
+        }
+      ]
     },
     {
       "id": "gpt-6-sol",
@@ -142,7 +192,7 @@
       "sources": [
         {
           "label": "Google Gemini API pricing",
-          "url": "https://ai.google.dev/gemini-api/docs/pricing"
+          "url": "https://aistudio.google.com/docs/pricing"
         },
         {
           "label": "Google Argon rollout post (Oct 13)",
@@ -162,7 +212,7 @@
       "sources": [
         {
           "label": "Google Gemini API pricing",
-          "url": "https://ai.google.dev/gemini-api/docs/pricing"
+          "url": "https://aistudio.google.com/docs/pricing"
         },
         {
           "label": "Google Argon rollout post (Oct 13)",
@@ -170,7 +220,23 @@
         }
       ],
       "post": "/trends/gemini-4-argon-explained/"
+    },
+    {
+      "id": "mistral-large-4",
+      "name": "Mistral Large 4",
+      "vendor": "Mistral",
+      "input": 0.7,
+      "output": 2.1,
+      "cached": 0.07,
+      "note": "Mistral API price for mistral-large-4. The weights are also open (modified MIT license).",
+      "sources": [
+        {
+          "label": "Mistral Large 4 release post",
+          "url": "https://mistral.ai/news/mistral-large-4-oss/"
+        }
+      ],
+      "post": "/trends/mistral-large-4-open-weights-explained/"
     }
   ],
-  "verifiedAgainst": "Official vendor pricing pages, 2026-10-16"
+  "verifiedAgainst": "Official vendor pricing pages, 2026-11-15"
 }
