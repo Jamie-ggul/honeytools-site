@@ -2,6 +2,7 @@
 title: "Rent a GPU to Run a Giant Open Model? What It Costs and When It's Worth It"
 description: "Running a model like Muse Spark Open takes roughly 700 GB of GPU memory. Here's what renting that on Runpod costs per hour, how it compares with a hosted API, and who should skip renting entirely."
 pubDate: 2026-10-24
+updatedDate: 2026-11-15
 tags: ["AI Hardware", "Local AI", "GPU Rental", "Open Source AI"]
 affiliate: true
 draft: false
@@ -23,15 +24,16 @@ That's why single consumer GPUs are out. An RTX 4090 has 24 GB; even an 80 GB H1
 
 ## What It Costs on Runpod
 
-Runpod's pricing page lists on-demand prices per GPU per hour. For the GPUs relevant to a model this size:
+Runpod's pricing page lists on-demand prices per GPU per hour (checked November 15, 2026; several were raised since we first published on October 24). These are the Secure Cloud rates; for Community Cloud, storage, and billing details, see our [Runpod pricing guide](/guides/runpod-pricing-explained-2026/). For the GPUs relevant to a model this size:
 
 | GPU | Memory each | Price per GPU per hour |
 |---|---|---|
 | H200 | 141 GB | $5.29 |
 | B200 | 180 GB | $7.99 |
-| H100 SXM | 80 GB | $3.99 |
-| A100 | 80 GB | $1.79 |
-| RTX 5090 | 32 GB | $1.19 |
+| H100 SXM | 80 GB | $4.39 |
+| A100 SXM | 80 GB | $2.19 |
+| A100 PCIe | 80 GB | $2.09 |
+| RTX 5090 | 32 GB | $1.39 |
 | RTX 4090 | 24 GB | $0.89 |
 
 Putting those together for Muse Spark Open, using Meta's stated requirement:
@@ -65,7 +67,7 @@ Here's the break-even arithmetic, so you can plug in your own numbers. Assume yo
 - **Short experiments.** If you want to try the model on your own tasks for an afternoon without committing to an API provider, a few hours of rental is cheap relative to buying hardware.
 - **Fine-tuning or modifying the weights.** The Muse Model License permits fine-tuning, and hosted APIs generally don't let you change the model.
 - **Strict control over where data goes.** Renting a machine you control isn't the same as running on-premises, but some teams prefer it to sending prompts to a third-party API. Read Runpod's security terms for your own requirements.
-- **Smaller models.** For open models that fit in 24 to 80 GB, a single RTX 4090 ($0.89 an hour), RTX 5090 ($1.19), or A100 ($1.79) is a far more modest bill than the eight-GPU example, and this is where most people experimenting with local models actually land.
+- **Smaller models.** For open models that fit in 24 to 80 GB, a single RTX 4090 ($0.89 an hour), RTX 5090 ($1.39), or A100 ($2.09 to $2.19) is a far more modest bill than the eight-GPU example, and this is where most people experimenting with local models actually land.
 
 ## When You Should Skip It
 
