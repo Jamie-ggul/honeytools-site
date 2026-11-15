@@ -69,6 +69,8 @@ This is the comparison most people run into first, since both are AI meeting not
 
 Based on this, Fireflies looks like the stronger fit if your team meets in more than one language or needs broader integrations with CRM and collaboration tools. Otter's slightly lower price and simpler feature set may suit smaller, English-only teams that don't need much beyond basic transcription. Take the accuracy percentages with a grain of salt though — they're self-reported/aggregated figures from comparison sites, not a controlled independent benchmark.
 
+If integrations are the deciding factor, our [Fireflies integrations guide](/reviews/fireflies-ai-integrations-2026/) breaks down what Fireflies actually sends to Slack, Notion, and HubSpot, and which plan each part needs.
+
 ## Is It Worth It?
 
 For teams with a real cadence of recurring meetings — sales calls, recruiting interviews, cross-functional syncs — the time saved on note-taking and the ability to search past meetings genuinely adds up, and the free tier is a reasonable way to test that before paying anything. For solo users or teams with only the occasional meeting, the per-seat pricing is harder to justify against how often you'd actually use it, and a simpler free transcription tool might cover the same need without a subscription.
