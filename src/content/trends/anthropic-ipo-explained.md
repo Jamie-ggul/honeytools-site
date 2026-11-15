@@ -1,22 +1,49 @@
 ---
-title: "Anthropic IPO Explained: Reported Date, Valuation, and What's Actually Confirmed"
-description: "Anthropic held its pre-IPO investor day on October 14, and attendees reported $16.8 billion in third-quarter revenue. Here's what has been reported, what Anthropic has actually said, and what's still unknown."
+title: "Anthropic IPO Explained: Price Range, Ticker (ANT), Expected Date, and What's Confirmed"
+description: "Anthropic launched its IPO roadshow on November 10: 825 million shares at an expected $70 to $78, listing on Nasdaq as ANT. Here's what the company has confirmed, what's only reported, and what's still unknown."
 pubDate: 2026-10-03
-updatedDate: 2026-10-16
+updatedDate: 2026-11-15
 tags: ["AI Trends", "Anthropic", "IPO", "AI Industry"]
 mainKeyword: "Anthropic IPO"
 draft: false
 ---
 
-**Update, October 16, 2026:** The October 14 investor briefing mentioned in our original post has now happened. We've added what Reuters, the Financial Times, and Bloomberg reported from it, and we've kept the figures labeled by source. Anthropic still hasn't published any of these numbers itself.
+**Update, November 15, 2026:** The IPO is no longer just reporting. Anthropic publicly filed its S-1 on October 26 and launched its roadshow on November 10, with a price range, share count, and ticker. We've added the confirmed terms below and kept reported details (pricing date, demand, valuation) labeled by source. Our October coverage of the investor day follows further down.
 
-**TL;DR:** Anthropic held a closed-door investor day at its San Francisco headquarters on October 14, 2026. According to Reuters, citing two attendees, the company told investors that third-quarter revenue was about $16.8 billion, up 45% from the second quarter, and that it was profitable on an adjusted basis. Bloomberg reports that formal marketing could start as early as the week of November 9, with a debut before Thanksgiving, at a valuation investors are discussing in the range of $1.8 trillion to $2 trillion. All of this comes from attendees and people familiar with the plans, Anthropic has not published results or confirmed a timeline, and there is no announced ticker, share price, or listing date.
+**TL;DR:** On November 10, 2026, Anthropic [announced](https://www.anthropic.com/news/roadshow-launch) the roadshow for its initial public offering: 825,000,000 Class A shares at an expected $70 to $78 per share, with a listing applied for on the Nasdaq Global Select Market under the symbol **ANT**. Anthropic is selling 801,351,354 of those shares and existing stockholders the rest, and it expects to give underwriters a 30-day option on up to 123,750,000 more. Anthropic hasn't announced a pricing or first trading date. Bloomberg and CNBC report pricing is planned for November 18 with trading on November 19, and Bloomberg reports the deal is multiple times oversubscribed. None of this is investment advice.
 
 ## A Quick Note on How This Was Put Together
 
-This is a news explainer based on published reporting, mainly Reuters, the Financial Times (as relayed by The Next Web), and Bloomberg (as relayed by Benzinga and Briefs Finance). We have not seen any company filing or official Anthropic statement on the IPO. Nothing here is investment advice, and the details below could change before, or whether, an IPO happens. We'll keep updating this post as new reporting comes in.
+This is a news explainer. Confirmed terms come from Anthropic's own announcements; everything else is press reporting (Reuters, Bloomberg, the Financial Times, CNBC and others, sometimes as relayed by other outlets), and we label it that way. We haven't read the full S-1, so figures attributed to "coverage of the filing" are as reported. Nothing here is investment advice, and the details can change until the shares actually price. We'll keep updating this post.
 
-## What Happened at the October 14 Investor Day
+## What Anthropic Has Confirmed (November 10 Announcement)
+
+These come from Anthropic's own [roadshow announcement](https://www.anthropic.com/news/roadshow-launch), checked November 15, 2026:
+
+| Item | Confirmed detail |
+|---|---|
+| Shares offered | 825,000,000 Class A common shares |
+| Sold by Anthropic | 801,351,354 shares |
+| Sold by existing stockholders | 23,648,646 shares (Anthropic receives no proceeds from these) |
+| Expected price range | $70.00 to $78.00 per share |
+| Exchange and ticker | Nasdaq Global Select Market, symbol "ANT" (applied for) |
+| Extra shares for underwriters | Expected 30-day option on up to 123,750,000 additional shares |
+| Where to get the prospectus | Goldman Sachs & Co. LLC and Morgan Stanley & Co. LLC |
+| Status | Registration statement filed with the SEC but "has not yet become effective"; no shares can be sold until it does |
+
+Some quick arithmetic on the range (ours, not Anthropic's): 825 million shares at $70 to $78 works out to about $57.8 billion to $64.4 billion in gross proceeds before the extra underwriter shares. That's the size of the offering, not the company's valuation, which depends on the total share count. Reporting by The Next Web and others puts the valuation implied by the range at roughly $1.4 trillion.
+
+## What Has Been Reported Since the Roadshow Started
+
+These are press reports citing people familiar with the deal. Anthropic hasn't confirmed them:
+
+- **Pricing and first trade:** Bloomberg and CNBC report pricing is planned for Wednesday, November 18, with Nasdaq trading starting November 19.
+- **Demand:** Bloomberg reported on November 11 that the order book is multiple times oversubscribed.
+- **Price could move up:** The Financial Times (as relayed by Fortune) reported bankers are considering pricing above the $70 to $78 range, which could lift the valuation toward $1.5 trillion.
+- **Private placement:** IBTimes reports a separate private placement of about $26 billion from major technology companies alongside the IPO. Anthropic's roadshow announcement doesn't mention one, so treat this as reported until the final prospectus confirms it.
+- **Q3 revenue:** Coverage of the filing reports third-quarter revenue of about $17 billion, in line with what investor-day attendees told Reuters in October (below).
+
+## Background: The October 14 Investor Day
 
 Prospective investors met CEO Dario Amodei and CFO Krishna Rao in San Francisco, per Reuters. Here is what attendees and reporters said, with the source attached to each:
 
@@ -33,24 +60,24 @@ A few cautions on these numbers. The Q3 figure is quarterly revenue, not an annu
 
 Attendees also told Reuters that Amodei reiterated the company's focus on AI safety. Reuters notes that Anthropic's prospectus, which it reviewed last month, warns of "catastrophic or existential risks" from AI, so the safety messaging is part of the investor pitch.
 
-## What Has Been Reported About Timing and Valuation
+## How the Timeline Moved
 
-- **Timing:** Bloomberg reported that formal marketing could begin as early as the week of November 9, with trading potentially starting before Thanksgiving (November 26) and the process wrapping up by the end of 2026. Reuters has reported the debut will likely slip until after the November U.S. midterm elections. Bloomberg itself says the plans remain fluid. Earlier coverage had floated an October listing, so the timeline has already moved once.
-- **Valuation:** Some prospective investors reportedly see a fair valuation between $1.8 trillion and $2 trillion, and Reuters describes the target as above $2 trillion. These are investor estimates, not company statements. For context, Fortune reported a valuation of around $380 billion back in February 2026.
-- **Size:** One report says the offering could match SpaceX's record listing in size.
+- **June 1, 2026:** Anthropic confidentially submitted a draft S-1 to the SEC.
+- **September–October:** Reports floated an October listing, then a November one after the U.S. midterm elections. In early October, Bloomberg reported formal marketing could start the week of November 9, at a valuation some investors put at $1.8 trillion to $2 trillion.
+- **October 26:** Anthropic publicly filed its S-1.
+- **November 10:** Roadshow launched with a $70 to $78 range, which reporting puts at roughly $1.4 trillion, below the $1.8 to $2 trillion discussed in October.
+- **November 18–19 (reported, not confirmed):** Pricing, then first trade.
 
 ## What Anthropic Has Said
 
-Anthropic has not published its quarterly results. It declined to comment to Bloomberg and didn't immediately respond to Reuters' request for comment. That means the revenue, profit, and valuation figures above are best understood as press reports based on people who were in the room, not company guidance.
+Anthropic's public statements on the IPO are its S-1 filing announcement (October 26) and the roadshow announcement (November 10). It hasn't publicly commented on pricing timing, demand, or valuation, and the investor-day figures above came from attendees rather than a company release.
 
-## What We Don't Know
+## What We Still Don't Know
 
-Plenty of the questions people are searching for have no answer yet:
-
-- **Ticker, share price, and exchange:** None have been announced in the coverage we found.
-- **A public prospectus:** As of the October 14 and 15 coverage, we haven't seen a public filing. Details like audited revenue, losses, and share structure aren't something we can verify here.
-- **What "adjusted profit" means:** No report says which costs are excluded.
-- **Whether it happens on this timeline:** Every report we reviewed says timing is subject to change.
+- **The final price:** It could land inside, above, or below the $70 to $78 range.
+- **The first trading date:** November 19 is reported, not announced.
+- **The final valuation:** It depends on the final price and the total share count.
+- **How the extra 123.75 million underwriter shares are used:** Banks often exercise this option in a strong deal, but that isn't decided until after pricing.
 
 ## Why This Matters Beyond Wall Street
 
@@ -63,25 +90,28 @@ Generally, an IPO means the company's shares start trading on a public exchange,
 ## FAQ
 
 **When is the Anthropic IPO?**
-Reporting points to marketing starting as early as the week of November 9 and a possible debut before Thanksgiving, but this is unconfirmed and could change. Reuters says the debut will likely come after the midterm elections.
+Anthropic launched its roadshow on November 10, 2026. It hasn't announced a pricing or trading date. Bloomberg and CNBC report pricing on November 18 and trading on November 19.
+
+**What is the Anthropic IPO price?**
+The expected range is $70 to $78 per share, per Anthropic's announcement. The final price is set at pricing and could fall outside the range; the FT reports bankers are considering going above it.
+
+**What is the Anthropic stock ticker?**
+Anthropic has applied to list on the Nasdaq Global Select Market under the symbol ANT.
+
+**How many shares is Anthropic selling?**
+825,000,000 Class A shares in total: 801,351,354 from Anthropic and 23,648,646 from existing stockholders, plus an expected 30-day underwriter option on up to 123,750,000 more.
 
 **What is Anthropic's IPO valuation?**
-Investors are reportedly discussing roughly $1.8 trillion to $2 trillion, and Reuters describes the target as above $2 trillion. No official valuation has been announced.
+Reporting puts the valuation implied by the range at roughly $1.4 trillion, possibly higher if the deal prices above the range. In October, some investors had discussed $1.8 trillion to $2 trillion.
 
-**What was Anthropic's revenue last quarter?**
-Attendees at the October 14 investor day reported $16.8 billion for the third quarter, up about 45% from the second. Anthropic hasn't published the figure.
+**How much is Anthropic raising?**
+By our arithmetic, $57.8 billion to $64.4 billion at the range, before any extra underwriter shares. Not all of that goes to Anthropic, since part of the offering is sold by existing stockholders.
 
-**Is Anthropic profitable?**
-Attendees say the company told investors it was profitable on an adjusted basis in Q3. No profit amount or definition of "adjusted" has been reported, and the 2025 operating loss was above $8 billion.
-
-**What is the Anthropic IPO ticker or share price?**
-None has been announced.
-
-**Has Anthropic confirmed the IPO?**
-Not in the coverage we reviewed. Anthropic declined to comment to Bloomberg and hasn't published its results.
+**Can ordinary investors buy Anthropic shares?**
+Once ANT starts trading, anyone with a brokerage account that offers Nasdaq stocks can buy shares on the open market. IPO allocations at the offering price usually go mostly to institutional investors. This is general background, not advice.
 
 ## Final Thoughts
 
-Right now this is still a well-sourced set of reports, not an announcement, but the picture is a lot more concrete than it was two weeks ago. Multiple outlets agree on the Q3 revenue figure, which makes it more credible, yet it all traces back to what the company told investors in a private meeting. The most useful things to watch next are whether a public prospectus appears and whether formal marketing actually starts the week of November 9.
+The Anthropic IPO went from a set of well-sourced reports to a confirmed deal with a price range, a share count, and a ticker. The open questions now are narrower: where it prices on (reportedly) November 18, and how ANT trades from its first day. The range implies a lower valuation than the $2 trillion talk from October, while early reports of heavy demand suggest the price could still move up. We'll update this post after pricing.
 
-Sources: [Reuters via Investing.com](https://www.investing.com/news/stock-market-news/anthropics-q3-revenue-surges-45-to-nearly-17-billion-4950208), [The Next Web (citing the Financial Times)](https://thenextweb.com/news/anthropic-q3-revenue-16-8bn-ipo), [Benzinga](https://www.benzinga.com/markets/private-markets/26/10/62119363/anthropic-eyes-november-ipo-as-investors-peg-ai-giant-at-up-to-2-trillion), [Briefs Finance](https://www.briefs.co/news/anthropic-sets-investor-meetings-on-oct-14-ahead-of-possible/), [Fortune](https://fortune.com/2026/02/13/anthropics-380-billion-valuation-vaults-it-next-to-openai-spacex-among-largest-ipo-candidates)
+Sources: [Anthropic roadshow announcement (Nov 10)](https://www.anthropic.com/news/roadshow-launch), [Stock Analysis (citing Bloomberg)](https://stockanalysis.com/news/anthropic-ipo-multiple-times-oversubscribed/), [IBTimes](https://www.ibtimes.com/anthropic-ipo-oversubscribed-90-billion-fundraising-3809646), [The Next Web](https://thenextweb.com/news/anthropic-ipo-terms-1-4-trillion-valuation), [Reuters via Investing.com](https://www.investing.com/news/stock-market-news/anthropics-q3-revenue-surges-45-to-nearly-17-billion-4950208), [The Next Web (citing the Financial Times)](https://thenextweb.com/news/anthropic-q3-revenue-16-8bn-ipo), [Benzinga](https://www.benzinga.com/markets/private-markets/26/10/62119363/anthropic-eyes-november-ipo-as-investors-peg-ai-giant-at-up-to-2-trillion), [Briefs Finance](https://www.briefs.co/news/anthropic-sets-investor-meetings-on-oct-14-ahead-of-possible/), [Fortune](https://fortune.com/2026/02/13/anthropics-380-billion-valuation-vaults-it-next-to-openai-spacex-among-largest-ipo-candidates)
