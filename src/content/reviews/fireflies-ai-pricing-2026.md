@@ -41,7 +41,7 @@ Business adds:
 - Conversation intelligence and team-level analytics
 - Multi-language mode for teams that meet in more than one language
 
-Business is the plan most likely to fit a team with a real, ongoing meeting cadence — the unlimited storage alone removes the thing most likely to force an upgrade later. Business is also the only plan with Integration Rules, which decide which meetings get sent to which tool (see the [Fireflies integrations guide](/reviews/fireflies-ai-integrations-2026/)).
+Business is the plan most likely to fit a team with a real, ongoing meeting cadence — the unlimited storage alone removes the thing most likely to force an upgrade later. Business (and Enterprise) also add Integration Rules, which decide which meetings get sent to which tool (see the [Fireflies integrations guide](/reviews/fireflies-ai-integrations-2026/)).
 
 ## The Pricing Detail Most People Miss
 
