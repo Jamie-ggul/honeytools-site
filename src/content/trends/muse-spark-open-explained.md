@@ -57,7 +57,7 @@ Meta's launch post doesn't include benchmark comparisons. The Hugging Face model
 | GPQA Diamond | 89.0 | Qwen3.8: 93.5, Kimi K3: 93.5, GLM 5.3: 91.7 |
 | Artificial Analysis Intelligence Index | 39 | GLM 5.3: 45, Kimi K3: 44, Qwen3.8: 40, Mistral Large 4: 38 |
 
-The honest reading is that Muse Spark Open does well on tool use and multimodal tasks, but "most capable U.S. open-weight model" is a narrower claim than "most capable open model," since Chinese models like GLM 5.3 and Kimi K3 score higher on several of these tests. The figures come from Meta's model card, we couldn't confirm who ran each comparison number, and no independent testing of the released weights had appeared in the coverage we reviewed. Wait for third-party evaluations before treating any of this as settled. Mistral Large 4 appears in the model card's comparison table, so its own release is the next one worth comparing against.
+The honest reading is that Muse Spark Open does well on tool use and multimodal tasks, but "most capable U.S. open-weight model" is a narrower claim than "most capable open model," since Chinese models like GLM 5.3 and Kimi K3 score higher on several of these tests. The figures come from Meta's model card, we couldn't confirm who ran each comparison number, and no independent testing of the released weights had appeared in the coverage we reviewed. Wait for third-party evaluations before treating any of this as settled. Mistral Large 4 appears in the model card's comparison table, and its weights have since been released too; see our [Mistral Large 4 explainer](/trends/mistral-large-4-open-weights-explained/) for how the two compare.
 
 ## Safety Claims, and the Open-Weights Catch
 
