@@ -2,15 +2,17 @@
 title: "Anthropic IPO Explained: $83 Price, Ticker (ANT), First Trading Day, and What's Confirmed"
 description: "Anthropic priced its IPO at $83 per share on November 18, above its $70 to $78 range, and ANT began trading on Nasdaq on November 19. Here's what the company has confirmed, what's only reported, and what's still unknown."
 pubDate: 2026-10-03
-updatedDate: 2026-11-19
+updatedDate: 2026-11-24
 tags: ["AI Trends", "Anthropic", "IPO", "AI Industry"]
 mainKeyword: "Anthropic IPO"
 draft: false
 ---
 
+**Update, November 24, 2026:** Added ANT's first-day close ($97.17, about 17% above the IPO price) and the $26 billion concurrent private placement, now reported from the filings by several outlets.
+
 **Update, November 19, 2026:** The IPO has priced. On November 18, Anthropic [announced](https://www.anthropic.com/news/anthropic-prices-initial-public-offering) a price of $83.00 per share, above the $70 to $78 range from the roadshow, and a larger offering of 980 million shares. ANT started trading on the Nasdaq Global Select Market on November 19. We've replaced the roadshow terms with the final terms, added what's been reported about the first day of trading, and kept the October investor-day background further down. Our November 15 update covered the roadshow launch.
 
-**TL;DR:** Anthropic [priced](https://www.anthropic.com/news/anthropic-prices-initial-public-offering) its initial public offering at **$83.00 per share** on November 18, 2026. The offering is 980,000,000 Class A shares (956,351,354 sold by Anthropic, 23,648,646 by existing stockholders), up from 825 million at the roadshow, and underwriters have a 30-day option on up to 147,000,000 more. Shares were expected to begin trading on November 19 on Nasdaq under the ticker **ANT**, with the deal expected to close November 20. By our arithmetic, that's about $81.3 billion in gross proceeds before the extra shares. Press reports say ANT's first trade was $111.50, about 34% above the IPO price, before the stock gave back part of that gain during the day. None of this is investment advice.
+**TL;DR:** Anthropic [priced](https://www.anthropic.com/news/anthropic-prices-initial-public-offering) its initial public offering at **$83.00 per share** on November 18, 2026. The offering is 980,000,000 Class A shares (956,351,354 sold by Anthropic, 23,648,646 by existing stockholders), up from 825 million at the roadshow, and underwriters have a 30-day option on up to 147,000,000 more. Shares were expected to begin trading on November 19 on Nasdaq under the ticker **ANT**, with the deal expected to close November 20. By our arithmetic, that's about $81.3 billion in gross proceeds before the extra shares. Press reports say ANT's first trade was $111.50, about 34% above the IPO price, and that it closed its first day at $97.17, about 17% above the IPO price. Separately, a group of tech companies agreed to buy $26 billion of non-voting shares in a concurrent private placement at $83, which reporting puts the combined raise at about $107.3 billion. None of this is investment advice.
 
 ## A Quick Note on How This Was Put Together
 
@@ -40,10 +42,11 @@ Some quick arithmetic (ours, not Anthropic's): 980 million shares at $83 is abou
 These are press reports. Anthropic hasn't confirmed them in its own announcements:
 
 - **First trade:** Stock Titan's live coverage reports ANT's first trade at $111.50 at 11:48 a.m. ET on November 19, out of Nasdaq's opening auction, about 34% above the $83 IPO price. NBC News, as relayed by other outlets, put it at about 11:50 a.m.
-- **Intraday range:** Stock Titan reports a high of $114.99 shortly after the open and a low of $92.72 around 1:18 p.m. ET, with the stock near $96 in mid-afternoon. We didn't have a confirmed closing price when we published this update.
-- **Valuation:** CNBC (as relayed by other outlets) put Anthropic's market value at about $2 trillion at the first-trade price. That figure depends on the share count used and moves with the stock, so treat it as a rough snapshot.
-- **Size record:** CNBC and others describe it as the largest IPO on record, ahead of SpaceX's offering earlier this year. We haven't checked the comparison against the SpaceX filings.
-- **Side sale to tech companies:** Coverage of the filings (Stock Titan) describes a separate $26 billion sale of non-voting Class N shares at $83 to several large technology companies, set to close after the IPO. Anthropic's pricing announcement doesn't mention it, so treat the details as reported until you check the final prospectus.
+- **First-day close:** CNN, Forbes and Stock Titan report that ANT closed at $97.17 on November 19, about 17% above the $83 IPO price and roughly 13% below the first trade. CNN put the market value at $1.76 trillion at that close.
+- **Intraday range:** Reports put the day's low at $92.72 and the high at around $115 (Stock Titan reported $114.99; FinanceFeeds, citing Nasdaq, $115.10).
+- **Valuation:** Reports put the value at about $1.5 trillion fully diluted at the $83 IPO price (The Next Web, citing Bloomberg), about $2 trillion at the first trade (CNBC and Forbes), and $1.76 trillion at the first-day close (CNN). These depend on the share count used and move with the stock.
+- **Size record:** Forbes, the Boston Globe and others describe the $81.3 billion offering as the largest IPO on record, ahead of SpaceX's June offering (reported at $75 billion, or $85.7 billion after its underwriter option).
+- **Concurrent private placement:** TechCrunch, Renaissance Capital and others report that seven companies (AMD, Broadcom, Google, Micron, Microsoft, Nvidia and TSMC) agreed to buy $26 billion of non-voting shares at the $83 IPO price, bringing the total raise to about $107.3 billion. Anthropic's pricing announcement doesn't describe it; a later Anthropic news item refers to the closing of a concurrent private placement.
 - **Demand:** Before pricing, Bloomberg reported the order book was multiple times oversubscribed, and the Financial Times (as relayed by Fortune) reported bankers were considering pricing above the range, which is what happened.
 
 ## Background: The October 14 Investor Day
@@ -81,7 +84,6 @@ Anthropic's public statements on the IPO are its S-1 filing announcement (Octobe
 
 - **Whether the extra 147 million underwriter shares get bought:** The option runs for 30 days after pricing.
 - **Where ANT settles:** First-day prices for very large IPOs often swing widely, and one day of trading says little about the long run.
-- **The final details of the Class N side sale:** Its terms are in the filings, not in Anthropic's announcement, and it was reported as not yet closed.
 - **The first earnings report as a public company:** Until then, the Q3 numbers above remain reported figures, not audited quarterly results in a public filing.
 
 ## Why This Matters Beyond Wall Street
@@ -104,16 +106,16 @@ $83.00 per share, per Anthropic's pricing announcement. That's above the $70 to 
 ANT, on the Nasdaq Global Select Market.
 
 **How did ANT trade on its first day?**
-Press reports put the first trade at $111.50, about 34% above the IPO price, with the stock trading in the mid-$90s by mid-afternoon on November 19. Anthropic doesn't publish trading prices; check a live quote for current figures.
+Press reports put the first trade at $111.50, about 34% above the IPO price, and the close at $97.17, about 17% above it. Anthropic doesn't publish trading prices; check a live quote for current figures.
 
 **How many shares did Anthropic sell?**
 980,000,000 Class A shares in total: 956,351,354 from Anthropic and 23,648,646 from existing stockholders, plus a 30-day underwriter option on up to 147,000,000 more.
 
 **How much did Anthropic raise?**
-By our arithmetic, about $81.3 billion in gross proceeds at $83, before fees and before the optional shares (about $93.5 billion if the option is fully exercised). Part of the offering is sold by existing stockholders, so Anthropic doesn't receive all of it. A separate $26 billion side sale of Class N shares has been reported from the filings.
+By our arithmetic, about $81.3 billion in gross proceeds at $83, before fees and before the optional shares (about $93.5 billion if the option is fully exercised). Part of the offering is sold by existing stockholders, so Anthropic doesn't receive all of it. A separate $26 billion private placement of non-voting shares to seven tech companies brings the reported total to about $107.3 billion.
 
 **What is Anthropic's valuation after the IPO?**
-It moves with the stock. CNBC put it at about $2 trillion at the first-trade price; at the $83 IPO price it's lower. Anthropic hasn't stated a valuation.
+It moves with the stock. Reports put it at about $1.5 trillion fully diluted at the $83 IPO price and $1.76 trillion at the first-day close (CNN). Anthropic hasn't stated a valuation.
 
 **Can ordinary investors buy Anthropic shares?**
 Yes, on the open market through a brokerage account that offers Nasdaq stocks. This is general background, not advice.
@@ -122,4 +124,4 @@ Yes, on the open market through a brokerage account that offers Nasdaq stocks. T
 
 The Anthropic IPO is done: priced above its range, with more shares than planned, and trading under ANT. The confirmed part is narrow but solid, namely the price, the share count, the ticker, and the dates, while the valuation, the record comparison, and day-one moves come from press reporting and will keep changing. The next confirmed data point will be Anthropic's first quarterly report as a public company. We'll keep this post updated.
 
-Sources (new sources checked November 19, 2026): [Anthropic pricing announcement (Nov 18)](https://www.anthropic.com/news/anthropic-prices-initial-public-offering), [Anthropic roadshow announcement (Nov 10)](https://www.anthropic.com/news/roadshow-launch), [Stock Titan live coverage](https://www.stocktitan.net/articles/anthropic-ipo-live-ant-first-trading-day-2026), [The Tech Hacker (citing NBC News, CNBC, CNN)](https://thetechhacker.com/news/anthropic-stock-ant-opens-nasdaq-debut/), [Stock Analysis (citing Bloomberg)](https://stockanalysis.com/news/anthropic-ipo-multiple-times-oversubscribed/), [IBTimes](https://www.ibtimes.com/anthropic-ipo-oversubscribed-90-billion-fundraising-3809646), [The Next Web](https://thenextweb.com/news/anthropic-ipo-terms-1-4-trillion-valuation), [Reuters via Investing.com](https://www.investing.com/news/stock-market-news/anthropics-q3-revenue-surges-45-to-nearly-17-billion-4950208), [The Next Web (citing the Financial Times)](https://thenextweb.com/news/anthropic-q3-revenue-16-8bn-ipo), [Benzinga](https://www.benzinga.com/markets/private-markets/26/10/62119363/anthropic-eyes-november-ipo-as-investors-peg-ai-giant-at-up-to-2-trillion), [Briefs Finance](https://www.briefs.co/news/anthropic-sets-investor-meetings-on-oct-14-ahead-of-possible/), [Fortune](https://fortune.com/2026/02/13/anthropics-380-billion-valuation-vaults-it-next-to-openai-spacex-among-largest-ipo-candidates)
+Sources (new sources checked November 24, 2026): [CNN live coverage](https://www.cnn.com/2026/11/19/business/live-news/anthropic-ipo), [Forbes](https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/), [TechCrunch](https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/), [Renaissance Capital](https://www.renaissancecapital.com/IPO-Center/News/122776/anthropic-prices-upsized-ipo-at-83-above-the-range), [The Next Web (citing Bloomberg)](https://thenextweb.com/news/anthropic-raises-107-3bn-in-the-biggest-ipo-ever), [Boston Globe](https://www.bostonglobe.com/2026/11/19/business/anthropic-sells-813-billion-worth-shares-worlds-largest-ipo/), [FinanceFeeds](https://financefeeds.com/anthropic-ant-stock-closes-debut-97-17-price-prediction/). Earlier: [Anthropic pricing announcement (Nov 18)](https://www.anthropic.com/news/anthropic-prices-initial-public-offering), [Anthropic roadshow announcement (Nov 10)](https://www.anthropic.com/news/roadshow-launch), [Stock Titan live coverage](https://www.stocktitan.net/articles/anthropic-ipo-live-ant-first-trading-day-2026), [The Tech Hacker (citing NBC News, CNBC, CNN)](https://thetechhacker.com/news/anthropic-stock-ant-opens-nasdaq-debut/), [Stock Analysis (citing Bloomberg)](https://stockanalysis.com/news/anthropic-ipo-multiple-times-oversubscribed/), [IBTimes](https://www.ibtimes.com/anthropic-ipo-oversubscribed-90-billion-fundraising-3809646), [The Next Web](https://thenextweb.com/news/anthropic-ipo-terms-1-4-trillion-valuation), [Reuters via Investing.com](https://www.investing.com/news/stock-market-news/anthropics-q3-revenue-surges-45-to-nearly-17-billion-4950208), [The Next Web (citing the Financial Times)](https://thenextweb.com/news/anthropic-q3-revenue-16-8bn-ipo), [Benzinga](https://www.benzinga.com/markets/private-markets/26/10/62119363/anthropic-eyes-november-ipo-as-investors-peg-ai-giant-at-up-to-2-trillion), [Briefs Finance](https://www.briefs.co/news/anthropic-sets-investor-meetings-on-oct-14-ahead-of-possible/), [Fortune](https://fortune.com/2026/02/13/anthropics-380-billion-valuation-vaults-it-next-to-openai-spacex-among-largest-ipo-candidates)

@@ -2,11 +2,13 @@
 title: "Gemini 4 Argon Explained: Release Date, Pricing, Benchmarks, and Who Can Actually Use It"
 description: "Google's new flagship model claims the benchmark lead over OpenAI and Anthropic, and since October 13 it's open to developers and subscribers. Here's what Gemini 4 Argon is, what it costs, and how much to trust the numbers."
 pubDate: 2026-10-03
-updatedDate: 2026-10-16
+updatedDate: 2026-11-24
 tags: ["AI Trends", "Google", "Gemini", "AI Models"]
 mainKeyword: "Gemini 4 Argon"
 draft: false
 ---
+
+**Update, November 24, 2026:** Argon now has siblings. Google added **Gemini 4 Hydrogen** (November 12), a faster, cheaper everyday model at $1.50 / $7.50 per million tokens, and **Gemini 4 Neon** (November 18), which sits between Hydrogen and the top-end Gemini 4 Carbon at $3 / $15. Argon's own price still doubles on December 1. See the new section below.
 
 **Update, October 16, 2026:** This post originally covered Argon's September 30 launch, when access was limited to vetted cybersecurity defenders. On October 13, Google began rolling Argon out more broadly, so we've rewritten the sections on availability and pricing. The benchmark figures are unchanged and still vendor-reported.
 
@@ -81,7 +83,29 @@ Argon's cybersecurity capabilities are the reason for the staged rollout. Google
 
 **If you work in security**, the Fairwind Program is the relevant path for the unfiltered version, and the main thing to watch is how Google handles the gap between the restricted and public versions.
 
+## The Gemini 4 Family Since November
+
+Argon is no longer Google's only Gemini 4 model. Prices below are from Google's Gemini API pricing page (Standard, paid tier, per million tokens), checked November 24, 2026:
+
+| Model | Input | Output (incl. thinking) | Cached input | Positioning |
+|---|---|---|---|---|
+| Gemini 4 Hydrogen | $1.50 | $7.50 | $0.075 | Fast everyday model, launched November 12 |
+| Gemini 4 Neon | $3.00 | $15.00 | $0.15 | Between Hydrogen and Carbon, launched November 18 |
+| Gemini 4 Argon | $2 → $4 on Dec 1 | $10 → $20 on Dec 1 | $0.10 → $0.20 | Code and analysis |
+| Gemini 4 Carbon | $2 → $4 on Dec 1 | $10 → $20 on Dec 1 | $0.10 → $0.20 | Google's deepest, long-horizon model |
+
+A few points from Google's launch posts and coverage:
+
+- **Hydrogen is the one most people will meet.** Google says it brings Gemini 4 "to everyone," across all Google AI Studio and Gemini API tiers, the Gemini app, and Search, not just paid plans. Reporting describes it as the successor to Gemini 3.8 Flash.
+- **Neon is the middle option.** Google pitches it as frontier-level reasoning for frequent coding and analysis work at lower cost and higher speed than Carbon. Reports say it has the same 1M-token context window as Hydrogen with four thinking levels (Low, Medium, High, Extra High).
+- **Argon's place is shrinking.** With Neon's launch, coverage reports that the Gemini app's model picker now lists Hydrogen, Neon and Carbon rather than Argon. Argon is still listed on the API pricing page as of November 24, but if you're choosing a model today, Neon or Carbon are the ones Google is pointing people to.
+
+Once Argon's price doubles on December 1, Neon ($3 / $15) will be cheaper than Argon ($4 / $20) per token. Plug your own request sizes into our [LLM API cost calculator](/tools/llm-api-cost-calculator/), which now includes Hydrogen and Neon.
+
 ## FAQ
+
+**What's the difference between Gemini 4 Argon, Neon, and Hydrogen?**
+Hydrogen is the fast, cheap everyday model ($1.50 / $7.50), Neon sits in the middle ($3 / $15), and Argon and Carbon are the heavier models ($2 / $10 until November 30, then $4 / $20). Prices are per million input / output tokens from Google's API pricing page.
 
 **Is Gemini 4 Argon available to the public?**
 Mostly, since October 13. Developers can use it through the Gemini API and Google AI Studio on a paid setup, and Google AI Pro and Ultra subscribers can use it in the Gemini app. The version without cyber guardrails is still limited to vetted defenders.
@@ -102,4 +126,4 @@ Google announced it on September 30, 2026, in a limited release, and widened acc
 
 Argon is a significant release mostly because it shows the frontier race is back to three serious competitors, with pricing falling at the same time. With access now open to developers and subscribers, the useful move is to run it on your own tasks, watch for independent evaluations, and compare it against your current model, not just the leaderboard.
 
-Sources: [Google: Gemini 4 Argon announcement (Sept 30)](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/), [Google: Gemini 4 Argon rollout (Oct 13)](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/), [Google Cloud blog](https://cloud.google.com/blog/products/ai-machine-learning/gemini-4-argon-available-on-google-cloud), [Gemini API pricing](https://ai.google.dev/gemini-api/docs/pricing), [VentureBeat](https://venturebeat.com/technology/google-unveils-gemini-4-argon-retaking-benchmark-lead-over-openai-and-anthropic-but-in-limited-release), [DataCamp](https://www.datacamp.com/blog/gemini-4-argon), [Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/google-gemini-4-argon-closes-235954585.html)
+Sources: [Google Gemini API pricing (checked Nov 24, 2026)](https://aistudio.google.com/docs/pricing), [Google: Introducing Gemini 4 Hydrogen](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/), [Google: Gemini 4 Hydrogen for developers](https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/), [Google Antigravity: Gemini 4 Neon](https://antigravity.google/blog/gemini-4-neon-in-google-antigravity/), [9to5Google on Neon](https://9to5google.com/2026/11/18/gemini-4-neon/), [Android Headlines on Neon](https://androidheadlines.com/2026/11/google-gemini-4-neon-release-pricing-features.html), [Google: Gemini 4 Argon announcement (Sept 30)](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/), [Google: Gemini 4 Argon rollout (Oct 13)](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/), [Google Cloud blog](https://cloud.google.com/blog/products/ai-machine-learning/gemini-4-argon-available-on-google-cloud), [Gemini API pricing](https://ai.google.dev/gemini-api/docs/pricing), [VentureBeat](https://venturebeat.com/technology/google-unveils-gemini-4-argon-retaking-benchmark-lead-over-openai-and-anthropic-but-in-limited-release), [DataCamp](https://www.datacamp.com/blog/gemini-4-argon), [Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/google-gemini-4-argon-closes-235954585.html)

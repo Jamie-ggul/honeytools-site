@@ -2,10 +2,13 @@
 title: "GPT-6 Astra Explained: Release Date, Pricing, Benchmarks, and What It Can Actually Do"
 description: "OpenAI's new flagship model can now use a computer on your behalf and helped produce new math proofs — but it also triggered OpenAI's highest internal safety threshold. Here's what GPT-6 Astra actually is, in plain terms."
 pubDate: 2026-09-27
+updatedDate: 2026-11-24
 tags: ["AI Trends", "OpenAI", "GPT-6", "AI Models"]
 mainKeyword: "GPT-6 Astra"
 draft: false
 ---
+
+**Update, November 24, 2026:** On November 17, OpenAI released **GPT-6.2 Astra** and **GPT-6.2 Sol**. GPT-6.2 Astra is the new flagship and costs 20% less than GPT-6 Astra in the API ($8 input / $40 output per million tokens, with cached input down from $1.00 to $0.40, per OpenAI's model page). GPT-6.2 Sol replaces GPT-6.1 Sol at the same $2 / $10 price. We've added a section on what changed below; the rest of this post still describes the original GPT-6 Astra launch.
 
 **TL;DR:** GPT-6 Astra is OpenAI's new flagship model, first rolled out on September 3, 2026 to a limited security-research group before opening up to Plus, Pro, Business, and Enterprise subscribers over the following week. OpenAI calls it "the world's most intelligent and aligned model," and the numbers back up at least the first half of that claim — big jumps in computer-use tasks, coding, and math reasoning. It's also the model behind the cheaper GPT-6 Sol and Luna variants we covered in our [Claude Opus 5.5 vs GPT-6 comparison](/trends/claude-opus-5-5-vs-gpt-6/). The one asterisk: Astra tripped OpenAI's own "Critical" cybersecurity risk threshold during testing, which is a first for one of their models.
 
@@ -43,9 +46,29 @@ Worth separating OpenAI's own reported numbers from an independent tracker's num
 
 For context, in our [Claude Opus 5.5 vs GPT-6 piece](/trends/claude-opus-5-5-vs-gpt-6/), Artificial Analysis scored Claude Opus 5.5 at 58 on this same index and GPT-6 Sol (the cheaper variant built on Astra's foundation) at 48 — so on this particular independent measure, Astra's 53 sits between the two, which tracks with it being a stronger base model than Sol but not benchmarked head-to-head against Claude by OpenAI directly.
 
+## What Changed With GPT-6.2 (November 17, 2026)
+
+OpenAI followed GPT-6 Astra with a new pair of models on November 17: GPT-6.2 Astra for the hardest, longest projects and GPT-6.2 Sol for everyday work. The API prices below are from OpenAI's own model pages, checked November 24, 2026:
+
+| Model | Input | Cached input | Output | vs. predecessor |
+|---|---|---|---|---|
+| GPT-6.2 Astra | $8.00 | $0.40 | $40.00 | 20% cheaper input and output than GPT-6 Astra ($10 / $50); cached input down from $1.00 |
+| GPT-6.2 Sol | $2.00 | $0.10 | $10.00 | Same price as GPT-6.1 Sol |
+
+Prices are per million tokens on the Standard tier. For both models, OpenAI's model pages say prompts over 272K input tokens are billed at 2x the input and cached rates and 1.5x the output rate for the whole request, and Batch costs half of Standard.
+
+What else has been reported from OpenAI's announcement (we couldn't open the launch post itself, so treat these as OpenAI's claims relayed by coverage):
+
+- **Fewer tokens per task:** OpenAI says both models get better results on demanding tasks while producing fewer output tokens, which is where most of the cost savings come from in practice.
+- **Availability:** Both models are in ChatGPT for Plus, Pro, Enterprise and Edu, in Codex, and in the API as `gpt-6.2-astra` and `gpt-6.2-sol`, with a reported 1.05M-token context window and up to 128K output tokens.
+- **Safety classification:** Reports say OpenAI rated both models at its "Critical" cybersecurity threshold under its Preparedness Framework, and that GPT-6.2 Astra is the first externally deployed model it judged to meet the "High" threshold for AI self-improvement.
+- **No GPT-6.1 Astra:** Coverage notes OpenAI cancelled a GPT-6.1 Astra before release in late September, so GPT-6.2 Astra is the direct successor to GPT-6 Astra.
+
+If you're on GPT-6 Astra through the API, the practical takeaway is simple: GPT-6.2 Astra costs less per token, so it's worth testing before your next billing cycle. You can compare the two (and Claude and Gemini) with your own token mix in our [LLM API cost calculator](/tools/llm-api-cost-calculator/).
+
 ## Pricing — Two Different Ways to Buy It
 
-**Through the OpenAI API directly:** $10 per million input tokens, $50 per million output tokens on Standard. A "Fast" mode doubles both speed and price (2x Standard). If you're already paying for ChatGPT Plus, Pro, Business, or Enterprise, Astra access is included in your existing subscription rather than billed separately.
+**Through the OpenAI API directly:** $10 per million input tokens, $50 per million output tokens on Standard (GPT-6 Astra; GPT-6.2 Astra is $8 / $40, see above). A "Fast" mode doubles both speed and price (2x Standard). If you're already paying for ChatGPT Plus, Pro, Business, or Enterprise, Astra access is included in your existing subscription rather than billed separately.
 
 **Through Microsoft Foundry (Azure), for enterprise deployments:** Pricing runs from roughly $10 to $75 per million tokens depending on context length and deployment tier (Standard pay-as-you-go vs. Provisioned Throughput), with a slight premium for U.S. Data Zone hosting versus Global. This channel is aimed at organizations that need enterprise governance controls, not individual users — it went generally available in Foundry around September 5, 2026.
 
@@ -63,6 +86,9 @@ If you're an individual ChatGPT subscriber, Astra is likely already included in 
 
 ## FAQ
 
+**What is GPT-6.2 Astra?**
+OpenAI's newer flagship, released November 17, 2026. It costs $8 per million input tokens and $40 per million output tokens in the API, 20% less than GPT-6 Astra, and comes with GPT-6.2 Sol ($2 / $10) for everyday work.
+
 **Is GPT-6 Astra the same as GPT-6 Sol or Luna?**
 No. Astra is the flagship model. Sol and Luna are cheaper, faster variants built on Astra's training foundation for cost-sensitive, high-volume use — we cover the pricing and benchmark tradeoffs between all three in our [Claude Opus 5.5 vs GPT-6 comparison](/trends/claude-opus-5-5-vs-gpt-6/).
 
@@ -76,4 +102,4 @@ If you're on a ChatGPT Plus, Pro, Business, or Enterprise plan, or accessing it 
 
 Astra is a real jump on the benchmarks that matter most for agentic, computer-operating AI — not just another round of "slightly better at trivia." The computer-use numbers in particular are the part worth paying attention to if you're thinking about where AI-driven automation is heading next. The cybersecurity threshold is the part worth watching rather than worrying about immediately — it's a signal about where frontier models are headed generally, more than a reason to avoid Astra specifically.
 
-Sources: [OpenAI](https://openai.com/index/gpt-6-astra/), [Artificial Analysis](https://artificialanalysis.ai/models/releases/gpt-6-astra), [Microsoft Azure / Foundry via StorageReview](https://www.storagereview.com/news/openai-gpt-6-astra-launches-in-microsoft-foundry-with-agentic-execution-and-computer-use), [TechCrunch](https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/)
+Sources: [OpenAI GPT-6.2 Astra model page](https://developers.openai.com/api/docs/models/gpt-6.2-astra) and [GPT-6.2 Sol model page](https://developers.openai.com/api/docs/models/gpt-6.2-sol) (checked Nov 24, 2026), [Let's Data Science on the GPT-6.2 announcement](https://letsdatascience.com/news/openai-launches-gpt-62-astra-frontier-model-and-gpt-62-sol-ccad09ba), [GCN](https://gcn.com/?p=23366), [Digital Trends](https://www.digitaltrends.com/computing/openai-gpt-6-2-astra-sol-launch/), [OpenAI](https://openai.com/index/gpt-6-astra/), [Artificial Analysis](https://artificialanalysis.ai/models/releases/gpt-6-astra), [Microsoft Azure / Foundry via StorageReview](https://www.storagereview.com/news/openai-gpt-6-astra-launches-in-microsoft-foundry-with-agentic-execution-and-computer-use), [TechCrunch](https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/)
