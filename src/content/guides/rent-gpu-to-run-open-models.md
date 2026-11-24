@@ -68,6 +68,7 @@ Here's the break-even arithmetic, so you can plug in your own numbers. Assume yo
 - **Fine-tuning or modifying the weights.** The Muse Model License permits fine-tuning, and hosted APIs generally don't let you change the model.
 - **Strict control over where data goes.** Renting a machine you control isn't the same as running on-premises, but some teams prefer it to sending prompts to a third-party API. Read Runpod's security terms for your own requirements.
 - **Smaller models.** For open models that fit in 24 to 80 GB, a single RTX 4090 ($0.89 an hour), RTX 5090 ($1.39), or A100 ($2.09 to $2.19) is a far more modest bill than the eight-GPU example, and this is where most people experimenting with local models actually land.
+- **Serving a smaller model to an app.** If you want an API endpoint rather than a machine you log into, Runpod Serverless can scale to zero between requests; our [Runpod Serverless + vLLM guide](/guides/runpod-serverless-vllm-deploy-guide-2026/) walks through the setup and the settings that drive the bill.
 
 ## When You Should Skip It
 
@@ -77,6 +78,8 @@ Here's the break-even arithmetic, so you can plug in your own numbers. Assume yo
 - **A cheaper laptop plus a cloud subscription already covers your needs.** See our [Surface Laptop Ultra explainer](/trends/surface-laptop-ultra-explained/) for how local-AI hardware compares with just paying for hosted models.
 
 ## If You Decide to Try Runpod
+
+Still deciding between providers? Our [Runpod vs. Vast.ai comparison](/guides/runpod-vs-vast-ai-2026/) covers how the two price GPUs and what happens when your balance runs out.
 
 You can create an account through our referral link: <a href="https://runpod.io?ref=l8ji19h4" rel="sponsored noopener">Runpod (referral link)</a>. Before starting a large job, check these things in the console:
 
