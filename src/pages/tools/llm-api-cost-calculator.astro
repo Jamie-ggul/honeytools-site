@@ -10,8 +10,8 @@ const updated = new Date(prices.lastUpdated + 'T00:00:00Z').toLocaleDateString('
 });
 ---
 <ToolLayout
-  title="LLM API Cost Calculator: Compare Claude, GPT-6, and Gemini 4 Pricing"
-  description="Free calculator that estimates your monthly API bill across Claude Opus 5.5, Claude Sonnet 5.5, GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna, and Gemini 4 Argon. Includes cached-input pricing and a rough token estimator."
+  title="LLM API Cost Calculator: Compare Claude, GPT-6, Gemini 4, and Mistral Pricing"
+  description="Free calculator that estimates your monthly API bill across Claude (Fable 5.2, Opus 5.5, Sonnet 5.5, Haiku 5.5), GPT-6.2 Astra and Sol, GPT-6.1 Terra, GPT-6 Luna, Gemini 4 (Argon, Neon, Hydrogen), and Mistral Large 4. Includes cached-input pricing and a rough token estimator."
   updated={updated}
 >
   <p>
@@ -84,7 +84,7 @@ const updated = new Date(prices.lastUpdated + 'T00:00:00Z').toLocaleDateString('
       const priceText = `$${m.input.toFixed(2)} input / $${m.output.toFixed(2)} output` + (m.cached !== null ? ` / $${m.cached.toFixed(2)} cached` : '') + '.';
       return (
         <li>
-          <strong>{m.name}</strong>: {priceText}{m.note ? ' ' + m.note : ''} Sources: {m.sources.map((s, i) => (<Fragment>{i > 0 ? ', ' : ''}<a href={s.url} rel="noopener">{s.label}</a></Fragment>))}. <a href={m.post}>Our explainer</a>.
+          <strong>{m.name}</strong>: {priceText}{m.note ? ' ' + m.note : ''} Sources: {m.sources.map((s, i) => (<Fragment>{i > 0 ? ', ' : ''}<a href={s.url} rel="noopener">{s.label}</a></Fragment>))}.{m.post && <Fragment> <a href={m.post}>Our explainer</a>.</Fragment>}
         </li>
       );
     })}
@@ -175,11 +175,11 @@ const updated = new Date(prices.lastUpdated + 'T00:00:00Z').toLocaleDateString('
         var msgs = [];
         var lcApplied = [], lcUnverified = [];
         models.forEach(function (m) {
-          if (m.longContext && inTok > m.longContext.threshold) lcApplied.push(m.name);
+          if (m.longContext && inTok > m.longContext.threshold) lcApplied.push(m.name + ' (over ' + m.longContext.threshold.toLocaleString('en-US') + ' input tokens: ' + m.longContext.inputMult + 'x input, ' + m.longContext.outputMult + 'x output)');
           if (m.longContextUnverified && inTok > 272000) lcUnverified.push(m.name);
         });
         if (lcApplied.length) {
-          msgs.push('Long-prompt pricing applied (over 272,000 input tokens, 2x input and 1.5x output) for: ' + lcApplied.join(', ') + '.');
+          msgs.push('Long-prompt pricing applied for: ' + lcApplied.join('; ') + '.');
         }
         if (lcUnverified.length) {
           msgs.push(lcUnverified.join(' and ') + ': OpenAI lists higher long-context rates but we could not confirm the threshold, so those rows may be understated for prompts this long.');
