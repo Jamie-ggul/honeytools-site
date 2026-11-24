@@ -33,6 +33,7 @@ It's probably not the right first step if:
 - **You just want to call a popular model.** Hosted APIs are often cheaper and simpler. Check the numbers in our [LLM API cost calculator](/tools/llm-api-cost-calculator/) before you host anything.
 - **You want to experiment interactively** (notebooks, trying prompts, fine-tuning). A regular GPU Pod is easier for that. Our [Runpod pricing guide](/guides/runpod-pricing-explained-2026/) explains when a Pod beats Serverless on cost.
 - **You want to run a giant model** that needs several 80 GB GPUs. That's a different cost picture, covered in our guide to [renting a GPU to run a giant open model](/guides/rent-gpu-to-run-open-models/).
+- **You haven't picked a provider yet.** Our [Runpod vs. Vast.ai comparison](/guides/runpod-vs-vast-ai-2026/) covers how the two differ on pricing, Serverless, and reliability.
 
 ## What You Need Before You Start
 

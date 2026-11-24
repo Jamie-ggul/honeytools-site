@@ -99,7 +99,7 @@ The safe habit on either platform is the same: set up auto-pay or low-balance al
 
 If you want to serve a model behind an endpoint that scales to zero, the two products differ.
 
-**Runpod Serverless** has its own price list. On the pricing page, an RTX 4090 Serverless worker is $1.34 an hour (vs. $0.89 for a Pod), an A100 80 GB is $2.99, and an H100 80 GB is $5.89. You pay more per hour in exchange for scale-to-zero. Our [Runpod pricing guide](/guides/runpod-pricing-explained-2026/) explains how cold starts and idle time are billed and when Serverless beats a Pod.
+**Runpod Serverless** has its own price list. On the pricing page, an RTX 4090 Serverless worker is $1.34 an hour (vs. $0.89 for a Pod), an A100 80 GB is $2.99, and an H100 80 GB is $5.89. You pay more per hour in exchange for scale-to-zero. Our [Runpod pricing guide](/guides/runpod-pricing-explained-2026/) explains how cold starts and idle time are billed and when Serverless beats a Pod, and our [Runpod Serverless + vLLM guide](/guides/runpod-serverless-vllm-deploy-guide-2026/) walks through deploying a model there.
 
 **Vast.ai** lists a Serverless product too. Its pricing docs say it "auto-scales instances with no separate pricing tier": you pay the underlying instance costs (compute, storage, bandwidth) with no additional fees. That means Serverless pricing on Vast.ai follows the same marketplace dynamics as everything else there.
 

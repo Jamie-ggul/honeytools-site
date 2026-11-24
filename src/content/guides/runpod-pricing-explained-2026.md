@@ -87,7 +87,7 @@ What you get for the premium is scale-to-zero. Per Runpod's [Serverless pricing 
 
 There are two worker types. **Flex workers** scale to zero and pay the standard rate. **Active workers** run 24/7; the docs say discounted rates for them are available "through sales inquiry," with no published percentage.
 
-**When is Serverless cheaper than a Pod?** A rough rule from the 4090 numbers above (our estimate, not Runpod's): $0.89 ÷ $1.34 ≈ 0.66. If a Serverless worker would be busy less than about two-thirds of the hours you'd otherwise keep a Pod running, Serverless tends to come out cheaper, before accounting for cold starts. If your traffic is steady all day, a Pod (or negotiated Active workers) usually wins. And if you only need a model through an API and don't care about hosting it yourself, compare with hosted API prices using our [LLM API cost calculator](/tools/llm-api-cost-calculator/) first. That's often cheaper than either.
+**When is Serverless cheaper than a Pod?** A rough rule from the 4090 numbers above (our estimate, not Runpod's): $0.89 ÷ $1.34 ≈ 0.66. If a Serverless worker would be busy less than about two-thirds of the hours you'd otherwise keep a Pod running, Serverless tends to come out cheaper, before accounting for cold starts. If your traffic is steady all day, a Pod (or negotiated Active workers) usually wins. And if you only need a model through an API and don't care about hosting it yourself, compare with hosted API prices using our [LLM API cost calculator](/tools/llm-api-cost-calculator/) first. That's often cheaper than either. If you do go the Serverless route, our [Runpod Serverless + vLLM guide](/guides/runpod-serverless-vllm-deploy-guide-2026/) covers the endpoint settings (idle timeout, active workers, max workers) that decide what you actually pay.
 
 ## Storage: Where Small Bills Grow
 
@@ -124,6 +124,8 @@ These come from Runpod's [billing docs](https://docs.runpod.io/accounts-billing/
 **The forgotten Pod:** an H100 SXM left running for a full 30 days = 720 hours × $4.39 ≈ **$3,161**. The $80/hour default spending limit won't stop this, because the Pod is well under it, and a low-balance email only helps if you act on it. Set a reminder to stop Pods.
 
 ## If You Decide to Try Runpod
+
+If you're still comparing providers, see our [Runpod vs. Vast.ai comparison](/guides/runpod-vs-vast-ai-2026/).
 
 You can create an account through our referral link: <a href="https://runpod.io?ref=l8ji19h4" rel="sponsored noopener">Runpod (referral link)</a>. Before your first session:
 
