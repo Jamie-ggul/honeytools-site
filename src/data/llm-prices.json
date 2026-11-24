@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-15",
+  "lastUpdated": "2026-11-24",
   "currency": "USD",
   "unit": "per 1 million tokens",
   "models": [
@@ -71,6 +71,55 @@
       ]
     },
     {
+      "id": "gpt-6-2-astra",
+      "name": "GPT-6.2 Astra",
+      "vendor": "OpenAI",
+      "input": 8.0,
+      "output": 40.0,
+      "cached": 0.4,
+      "longContext": {
+        "inputMult": 2.0,
+        "outputMult": 1.5,
+        "threshold": 272000
+      },
+      "note": "Standard tier. OpenAI's model page says prompts over 272K input tokens are billed at 2x input and cached rates and 1.5x output.",
+      "sources": [
+        {
+          "label": "OpenAI GPT-6.2 Astra model page",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.2-astra"
+        },
+        {
+          "label": "OpenAI API pricing",
+          "url": "https://developers.openai.com/api/docs/pricing"
+        }
+      ],
+      "post": "/trends/gpt-6-astra-explained/"
+    },
+    {
+      "id": "gpt-6-2-sol",
+      "name": "GPT-6.2 Sol",
+      "vendor": "OpenAI",
+      "input": 2.0,
+      "output": 10.0,
+      "cached": 0.1,
+      "longContext": {
+        "inputMult": 2.0,
+        "outputMult": 1.5,
+        "threshold": 272000
+      },
+      "note": "Standard tier. OpenAI's model page says prompts over 272K input tokens are billed at 2x input and cached rates and 1.5x output.",
+      "sources": [
+        {
+          "label": "OpenAI GPT-6.2 Sol model page",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.2-sol"
+        },
+        {
+          "label": "OpenAI API pricing",
+          "url": "https://developers.openai.com/api/docs/pricing"
+        }
+      ]
+    },
+    {
       "id": "gpt-6-astra",
       "name": "GPT-6 Astra",
       "vendor": "OpenAI",
@@ -130,8 +179,8 @@
       "note": "Standard tier, per OpenAI's pricing page.",
       "sources": [
         {
-          "label": "OpenAI API pricing",
-          "url": "https://developers.openai.com/api/docs/pricing"
+          "label": "OpenAI GPT-6.1 Terra model page",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6.1-terra"
         }
       ]
     },
@@ -167,11 +216,11 @@
       "input": 0.1,
       "output": 0.5,
       "cached": 0.01,
-      "note": "Standard tier, short context. OpenAI lists higher long-context rates but the threshold wasn't stated on the page.",
+      "note": "Standard tier. OpenAI's model page says prompts over 272K input tokens are billed at 2x input and cached rates and 1.5x output.",
       "sources": [
         {
-          "label": "OpenAI API pricing",
-          "url": "https://developers.openai.com/api/docs/pricing"
+          "label": "OpenAI GPT-6 Luna model page",
+          "url": "https://developers.openai.com/api/docs/models/gpt-6-luna"
         },
         {
           "label": "SiliconANGLE",
@@ -179,7 +228,11 @@
         }
       ],
       "post": "/trends/claude-opus-5-5-vs-gpt-6/",
-      "longContextUnverified": true
+      "longContext": {
+        "inputMult": 2.0,
+        "outputMult": 1.5,
+        "threshold": 272000
+      }
     },
     {
       "id": "gemini-4-argon-intro",
@@ -222,6 +275,38 @@
       "post": "/trends/gemini-4-argon-explained/"
     },
     {
+      "id": "gemini-4-neon",
+      "name": "Gemini 4 Neon",
+      "vendor": "Google",
+      "input": 3.0,
+      "output": 15.0,
+      "cached": 0.15,
+      "note": "Standard paid tier; output includes thinking tokens, per Google's pricing page.",
+      "sources": [
+        {
+          "label": "Google Gemini API pricing",
+          "url": "https://aistudio.google.com/docs/pricing"
+        }
+      ],
+      "post": "/trends/gemini-4-argon-explained/"
+    },
+    {
+      "id": "gemini-4-hydrogen",
+      "name": "Gemini 4 Hydrogen",
+      "vendor": "Google",
+      "input": 1.5,
+      "output": 7.5,
+      "cached": 0.075,
+      "note": "Standard paid tier; output includes thinking tokens, per Google's pricing page.",
+      "sources": [
+        {
+          "label": "Google Gemini API pricing",
+          "url": "https://aistudio.google.com/docs/pricing"
+        }
+      ],
+      "post": "/trends/gemini-4-argon-explained/"
+    },
+    {
       "id": "mistral-large-4",
       "name": "Mistral Large 4",
       "vendor": "Mistral",
@@ -238,5 +323,5 @@
       "post": "/trends/mistral-large-4-open-weights-explained/"
     }
   ],
-  "verifiedAgainst": "Official vendor pricing pages, 2026-11-15"
+  "verifiedAgainst": "Official vendor pricing pages, 2026-11-24"
 }
