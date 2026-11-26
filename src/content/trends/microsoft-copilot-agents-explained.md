@@ -57,4 +57,6 @@ Based on what's been announced, Autopilot is configured with specific roles and 
 
 The headline change here isn't any single feature — it's Microsoft splitting Copilot's pricing into "everyday AI you already pay for" and "agentic work you pay for by usage," which is a pattern likely to show up across other AI products as autonomous-agent features become the norm rather than the novelty. Home and Code are the parts most people will actually touch soon; Autopilot is the one to watch longer-term, since it's the clearest sign yet of Microsoft's own answer to "AI that works while you're not looking."
 
+Related: Google is drawing a similar line for agents in Workspace, with an MCP requirement starting February 1, 2027. See our [Google Workspace MCP explainer](/trends/google-workspace-mcp-ai-agents-explained/).
+
 Sources: [Unite.AI](https://www.unite.ai/microsoft-copilot-overhaul-adds-home-hub-code-builder-and-autopilot-agent/), [Futurum Group](https://futurumgroup.com/insights/microsoft-copilot-becomes-an-agentic-work-platform/), [Windows Forum](https://windowsforum.com/news/microsoft-365-copilot-splits-agent-features-into-usage-based-billing.445983/)
